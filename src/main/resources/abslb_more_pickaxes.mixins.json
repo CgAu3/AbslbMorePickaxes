@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.cgau3.abslbmorepickaxes.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BlockBehaviorMixin",
+    "CommonHooksMixin",
+    "ItemMixin",
+    "ServerPlayerGameModeMixin"
+  ],
+  "client": [
+    "MultiPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

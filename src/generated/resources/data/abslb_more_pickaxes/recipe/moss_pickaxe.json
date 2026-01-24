@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:moss_block"
+    },
+    "B": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "C": {
+      "item": "minecraft:bone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " B ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "abslb_more_pickaxes:moss_pickaxe"
+  }
+}
