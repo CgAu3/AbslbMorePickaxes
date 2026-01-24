@@ -2,19 +2,15 @@ package io.github.cgau3.abslbmorepickaxes.init;
 
 import io.github.cgau3.abslbmorepickaxes.item.BedrockPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MossPickaxeItem;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.component.Tool;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;
 

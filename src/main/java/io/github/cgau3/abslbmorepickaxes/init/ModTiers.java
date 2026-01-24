@@ -38,7 +38,7 @@ public enum ModTiers implements Tier {
     private final int enchantmentValue;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModTiers(
+    ModTiers(
         TagKey<Block> incorrectBlocksForDrops,
         int uses,
         float speed,
@@ -75,7 +75,7 @@ public enum ModTiers implements Tier {
     }
 
     public @NotNull Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 
 }

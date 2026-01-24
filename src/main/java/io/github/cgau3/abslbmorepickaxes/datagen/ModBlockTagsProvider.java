@@ -2,10 +2,8 @@ package io.github.cgau3.abslbmorepickaxes.datagen;
 
 import io.github.cgau3.abslbmorepickaxes.init.ModBlockTags;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
