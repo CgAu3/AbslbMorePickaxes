@@ -26,4 +26,6 @@ public class ModBlockTags {
     public static final TagKey<Block> CROWBAR_MINABLE =
         instanceTag(MOD_ID, "crowbar_minable");
 
+    public static final TagKey<Block> BASIC_STONE_BLOCKS =
+        instanceTag(MOD_ID, "basic_stone_blocks");
 }

@@ -1,3 +1,4 @@
-// 1.21.1	2026-01-24T02:12:42.5587689	Tags for minecraft:block mod id abslb_more_pickaxes
-7441d8b5c83fbef1df0f293d8aea76451aa18291 data/abslb_more_pickaxes/tags/block/crowbar_minable.json
-d731338377a30e2cf076d97c20931f67adbd5f48 data/abslb_more_pickaxes/tags/block/icy_blocks.json
+// 1.21.1	2026-01-25T15:40:15.4186947	Tags for minecraft:block mod id abslb_more_pickaxes
+696a918d53a68c71bc73ffd75b8593d3d3e4d7d3 data/abslb_more_pickaxes/tags/block/basic_stone_blocks.json
+5b0bc68ab11921571826ce06e5e141a493c6641e data/abslb_more_pickaxes/tags/block/crowbar_minable.json
+eed8b2c40200d5316606585c713cbab920baff68 data/abslb_more_pickaxes/tags/block/icy_blocks.json

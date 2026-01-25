@@ -1,5 +1,11 @@
 {
   "values": [
-    "abslb_more_pickaxes:moss_pickaxe"
+    "abslb_more_pickaxes:moss_pickaxe",
+    "abslb_more_pickaxes:icy_pickaxe",
+    "abslb_more_pickaxes:encumbering_pickaxe",
+    "abslb_more_pickaxes:crowbar_pickaxe",
+    "abslb_more_pickaxes:magnet_pickaxe",
+    "abslb_more_pickaxes:anglerfish_pickaxe",
+    "abslb_more_pickaxes:bedrock_pickaxe"
   ]
 }

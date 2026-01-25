@@ -3,22 +3,22 @@
   "category": "equipment",
   "key": {
     "A": {
-      "item": "minecraft:bedrock"
+      "item": "minecraft:lodestone"
     },
     "B": {
-      "item": "minecraft:barrier"
+      "item": "minecraft:iron_ingot"
     },
     "C": {
-      "item": "minecraft:netherite_pickaxe"
+      "item": "minecraft:diamond_pickaxe"
     }
   },
   "pattern": [
-    "AAA",
+    "BAB",
     " C ",
     " B "
   ],
   "result": {
     "count": 1,
-    "id": "abslb_more_pickaxes:bedrock_pickaxe"
+    "id": "abslb_more_pickaxes:magnet_pickaxe"
   }
 }

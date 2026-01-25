@@ -17,9 +17,18 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class BedrockPickaxeItem extends PickaxeItem {
-    public BedrockPickaxeItem(Tier p_42961_, Properties p_42964_) {
+public class IcyPickaxeItem extends PickaxeItem {
+    public IcyPickaxeItem(Tier p_42961_, Properties p_42964_) {
         super(p_42961_, p_42964_);
+    }
+
+    @Override
+    public float getDestroySpeed(@NotNull ItemStack toolItem, @NotNull BlockState state) {
+        float defaultSpeed = super.getDestroySpeed(toolItem, state);
+        if (state.is(ModBlockTags.ICY_BLOCKS) || state.is(BlockTags.ICE)) {
+            return defaultSpeed * 2.0F;
+        }
+        return defaultSpeed;
     }
 
     @Override
@@ -29,7 +38,7 @@ public class BedrockPickaxeItem extends PickaxeItem {
         @NotNull List<Component> components,
         @NotNull TooltipFlag flag
     ) {
-        components.add(Component.translatable("tooltip.abslb_more_pickaxes.bedrock_pickaxe"));
+        components.add(Component.translatable("tooltip.abslb_more_pickaxes.icy_pickaxe"));
         super.appendHoverText(stack, context, components, flag);
     }
 
@@ -41,11 +50,16 @@ public class BedrockPickaxeItem extends PickaxeItem {
         @NotNull BlockPos pos,
         @NotNull LivingEntity entity) {
         Tool tool = stack.get(DataComponents.TOOL);
-        return (tool != null);
+        if (state.is(ModBlockTags.ICY_BLOCKS) || state.is(BlockTags.ICE)) {
+            return (tool != null);
+        }
+        return super.mineBlock(stack, level, state, pos, entity);
     }
 
     @Override
-    public boolean isCorrectToolForDrops(@NotNull ItemStack p_336002_, @NotNull BlockState p_41450_) {
-        return true;
+    public boolean isCorrectToolForDrops(@NotNull ItemStack stack, @NotNull BlockState state) {
+        if (state.is(ModBlockTags.ICY_BLOCKS) || state.is(BlockTags.ICE))
+            return true;
+        return super.isCorrectToolForDrops(stack, state);
     }
 }

@@ -26,12 +26,48 @@ public class ModItemTagsProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
         tag(ItemTags.DURABILITY_ENCHANTABLE)
-            .add(ModItems.MOSS_PICKAXE.get());
+            .add(ModItems.MOSS_PICKAXE.get())
+            .add(ModItems.ICY_PICKAXE.get())
+            .add(ModItems.ENCUMBERING_PICKAXE.get())
+            .add(ModItems.CROWBAR_PICKAXE.get())
+            .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.ANGLERFISH_PICKAXE.get())
+            .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.MINING_ENCHANTABLE)
-            .add(ModItems.MOSS_PICKAXE.get());
+            .add(ModItems.MOSS_PICKAXE.get())
+            .add(ModItems.ICY_PICKAXE.get())
+            .add(ModItems.ENCUMBERING_PICKAXE.get())
+            .add(ModItems.CROWBAR_PICKAXE.get())
+            .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.ANGLERFISH_PICKAXE.get())
+            .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.MINING_LOOT_ENCHANTABLE)
-            .add(ModItems.MOSS_PICKAXE.get());
+            .add(ModItems.MOSS_PICKAXE.get())
+            .add(ModItems.ICY_PICKAXE.get())
+            .add(ModItems.ENCUMBERING_PICKAXE.get())
+            .add(ModItems.CROWBAR_PICKAXE.get())
+            .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.ANGLERFISH_PICKAXE.get())
+            .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.PICKAXES)
-            .add(ModItems.MOSS_PICKAXE.get());
+            .add(ModItems.MOSS_PICKAXE.get())
+            .add(ModItems.ICY_PICKAXE.get())
+            .add(ModItems.ENCUMBERING_PICKAXE.get())
+            .add(ModItems.CROWBAR_PICKAXE.get())
+            .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.ANGLERFISH_PICKAXE.get())
+            .add(ModItems.BEDROCK_PICKAXE.get());
+        tag(ItemTags.CLUSTER_MAX_HARVESTABLES)
+            .add(ModItems.MOSS_PICKAXE.get())
+            .add(ModItems.ICY_PICKAXE.get())
+            .add(ModItems.ENCUMBERING_PICKAXE.get())
+            .add(ModItems.CROWBAR_PICKAXE.get())
+            .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.ANGLERFISH_PICKAXE.get())
+            .add(ModItems.BEDROCK_PICKAXE.get());
+        tag(ItemTags.FISHING_ENCHANTABLE)
+            .add(ModItems.ANGLERFISH_PICKAXE.get());
+        tag(ItemTags.FISHES)
+            .add(ModItems.ANGLERFISH_PICKAXE.get());
     }
 }

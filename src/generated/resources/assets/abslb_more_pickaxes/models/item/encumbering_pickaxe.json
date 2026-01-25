@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "abslb_more_pickaxes:item/encumbering_pickaxe"
+  }
+}

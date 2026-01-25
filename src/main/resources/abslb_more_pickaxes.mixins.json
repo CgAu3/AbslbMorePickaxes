@@ -6,7 +6,8 @@
   "mixins": [
     "BlockBehaviorMixin",
     "CommonHooksMixin",
-    "ItemMixin",
+    "FishingHookPredicateMixin",
+    "IceBlockMixin",
     "ServerPlayerGameModeMixin"
   ],
   "client": [

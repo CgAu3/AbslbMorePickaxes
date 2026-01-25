@@ -4,6 +4,7 @@ import io.github.cgau3.abslbmorepickaxes.init.ModBlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -28,7 +29,22 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(ModBlockTags.ICY_BLOCKS)
             .add(Blocks.SNOW)
             .add(Blocks.SNOW_BLOCK)
-            .addTags(BlockTags.ICE);
+            .add(Blocks.ICE)
+            .add(Blocks.PACKED_ICE)
+            .add(Blocks.BLUE_ICE)
+            .add(Blocks.GLASS);
+        tag(ModBlockTags.BASIC_STONE_BLOCKS)
+            .addTags(BlockTags.BASE_STONE_OVERWORLD)
+            .addTags(BlockTags.BASE_STONE_NETHER)
+            .add(Blocks.END_STONE)
+            .add(Blocks.COBBLESTONE)
+            .add(Blocks.COBBLED_DEEPSLATE)
+            .add(Blocks.MOSSY_COBBLESTONE)
+            .add(Blocks.CALCITE)
+            .add(Blocks.SMOOTH_BASALT)
+            .add(Blocks.DRIPSTONE_BLOCK)
+            .add(Blocks.SANDSTONE)
+            .addTags(BlockTags.TERRACOTTA);
         tag(ModBlockTags.CROWBAR_MINABLE)
             .addTags(BlockTags.BEACON_BASE_BLOCKS)
             .add(Blocks.BEACON)
@@ -38,6 +54,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
             .addTags(BlockTags.CAULDRONS)
             .addTags(BlockTags.BUTTONS)
             .addTags(BlockTags.PRESSURE_PLATES)
+            .addTags(BlockTags.SHULKER_BOXES)
             .add(Blocks.REDSTONE_BLOCK)
             .add(Blocks.REDSTONE_LAMP)
             .add(Blocks.REPEATER)
@@ -51,10 +68,14 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
             .add(Blocks.FURNACE)
             .add(Blocks.SMOKER)
             .add(Blocks.BLAST_FURNACE)
+            .add(Blocks.LODESTONE)
+            .add(Blocks.BREWING_STAND)
             .add(Blocks.FLETCHING_TABLE)
             .add(Blocks.STONECUTTER)
             .add(Blocks.LOOM)
             .add(Blocks.LECTERN)
+            .add(Blocks.CRAFTING_TABLE)
+            .add(Blocks.CARTOGRAPHY_TABLE)
             .add(Blocks.BOOKSHELF)
             .add(Blocks.ENCHANTING_TABLE)
             .add(Blocks.SMITHING_TABLE)

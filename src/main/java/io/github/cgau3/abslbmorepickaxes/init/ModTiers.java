@@ -27,7 +27,7 @@ public enum ModTiers implements Tier {
         22.0f,
         9.0f,
         35,
-        () -> Ingredient.of(Items.PISTON)
+        () -> Ingredient.of(Items.NETHER_STAR)
     ),
     ;
 

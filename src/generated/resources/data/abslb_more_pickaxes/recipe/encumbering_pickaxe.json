@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:saddle"
+    },
+    "B": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "C": {
+      "item": "minecraft:anvil"
+    },
+    "Q": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "QAQ",
+    " B ",
+    " C "
+  ],
+  "result": {
+    "count": 1,
+    "id": "abslb_more_pickaxes:encumbering_pickaxe"
+  }
+}

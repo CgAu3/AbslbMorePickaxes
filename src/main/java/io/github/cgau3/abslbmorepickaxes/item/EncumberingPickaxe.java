@@ -1,5 +1,6 @@
 package io.github.cgau3.abslbmorepickaxes.item;
 
+import io.github.cgau3.abslbmorepickaxes.init.ModBlockTags;
 import net.minecraft.network.chat.Component;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.ItemStack;
@@ -11,16 +12,16 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class MossPickaxeItem extends PickaxeItem {
-    public MossPickaxeItem(Tier p_42961_, Properties p_42964_) {
+public class EncumberingPickaxe extends PickaxeItem {
+    public EncumberingPickaxe(Tier p_42961_, Properties p_42964_) {
         super(p_42961_, p_42964_);
     }
 
     @Override
     public float getDestroySpeed(@NotNull ItemStack toolItem, @NotNull BlockState state) {
         float defaultSpeed = super.getDestroySpeed(toolItem, state);
-        if (state.is(BlockTags.MOSS_REPLACEABLE)) {
-            return defaultSpeed * 6.0F;
+        if (state.is(ModBlockTags.BASIC_STONE_BLOCKS)) {
+            return defaultSpeed * 2.0F;
         }
         return defaultSpeed;
     }
@@ -32,7 +33,7 @@ public class MossPickaxeItem extends PickaxeItem {
         @NotNull List<Component> components,
         @NotNull TooltipFlag flag
     ) {
-        components.add(Component.translatable("tooltip.abslb_more_pickaxes.moss_pickaxe"));
+        components.add(Component.translatable("tooltip.abslb_more_pickaxes.encumbering_pickaxe"));
         super.appendHoverText(stack, context, components, flag);
     }
 }

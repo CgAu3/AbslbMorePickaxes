@@ -1,7 +1,17 @@
 {
   "itemGroup.abslb_more_pickaxes": "Abslb's More Pickaxes",
   "item.abslb_more_pickaxes.moss_pickaxe": "Moss Pickaxe",
-  "tooltip.abslb_more_pickaxes.moss_pickaxe": "Mines Moss-Replaceable Blocks much Faster",
+  "tooltip.abslb_more_pickaxes.moss_pickaxe": "Mines Moss-Replaceable Blocks Much Faster",
   "item.abslb_more_pickaxes.bedrock_pickaxe": "Bedrock Pickaxe",
-  "tooltip.abslb_more_pickaxes.bedrock_pickaxe": "Can Mine Bedrocks, or Maybe most Blocks"
+  "tooltip.abslb_more_pickaxes.bedrock_pickaxe": "Can Mine Bedrocks, or Maybe most Blocks",
+  "item.abslb_more_pickaxes.icy_pickaxe": "Icy Pickaxe",
+  "tooltip.abslb_more_pickaxes.icy_pickaxe": "Mines Icy Blocks Easily and With Drops",
+  "item.abslb_more_pickaxes.crowbar_pickaxe": "Crowbar Pickaxe",
+  "tooltip.abslb_more_pickaxes.crowbar_pickaxe": "Mines Storage Blocks and Utility Blocks Quickly",
+  "item.abslb_more_pickaxes.magnet_pickaxe": "Magnet Pickaxe",
+  "tooltip.abslb_more_pickaxes.magnet_pickaxe": "Drags the Block Drops to the Breaker who Holds it",
+  "item.abslb_more_pickaxes.encumbering_pickaxe": "Encumbering Pickaxe",
+  "tooltip.abslb_more_pickaxes.encumbering_pickaxe": "Mines Basic Stones Quicker; the Player Holding it cannot Pick up Items",
+  "item.abslb_more_pickaxes.anglerfish_pickaxe": "Anglerfish Pickaxe",
+  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "Mines Fast in Water; Occasionally Catches a Fish when Mining Underwater"
 }
