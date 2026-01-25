@@ -1,9 +1,9 @@
 package io.github.cgau3.abslbmorepickaxes.init;
 
-import io.github.cgau3.abslbmorepickaxes.item.AnglerfishPickaxe;
+import io.github.cgau3.abslbmorepickaxes.item.AnglerfishPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.BedrockPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.CrowbarPickaxeItem;
-import io.github.cgau3.abslbmorepickaxes.item.EncumberingPickaxe;
+import io.github.cgau3.abslbmorepickaxes.item.EncumberingPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.IcyPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MagnetPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MossPickaxeItem;
@@ -55,13 +55,13 @@ public class ModItems {
                 )
             )
     );
-    public static final DeferredItem<EncumberingPickaxe> ENCUMBERING_PICKAXE = ITEMS.registerItem(
+    public static final DeferredItem<EncumberingPickaxeItem> ENCUMBERING_PICKAXE = ITEMS.registerItem(
         "encumbering_pickaxe",
-        p -> new EncumberingPickaxe(ModTiers.VARIOUS, p),
+        p -> new EncumberingPickaxeItem(ModTiers.VARIOUS, p),
         new Item.Properties()
             .stacksTo(1)
             .attributes(
-                IcyPickaxeItem.createAttributes(
+                EncumberingPickaxeItem.createAttributes(
                     ModTiers.VARIOUS,
                     1.0F,
                     -2.8F
@@ -74,7 +74,7 @@ public class ModItems {
         new Item.Properties()
             .stacksTo(1)
             .attributes(
-                IcyPickaxeItem.createAttributes(
+                CrowbarPickaxeItem.createAttributes(
                     Tiers.DIAMOND,
                     2.0F,
                     -2.8F
@@ -87,28 +87,39 @@ public class ModItems {
         new Item.Properties()
             .stacksTo(1)
             .attributes(
-                IcyPickaxeItem.createAttributes(
+                MagnetPickaxeItem.createAttributes(
                     Tiers.DIAMOND,
                     1.0F,
                     -2.8F
                 )
             )
     );
-    public static final DeferredItem<AnglerfishPickaxe> ANGLERFISH_PICKAXE = ITEMS.registerItem(
+    public static final DeferredItem<AnglerfishPickaxeItem> ANGLERFISH_PICKAXE = ITEMS.registerItem(
         "anglerfish_pickaxe",
-        p -> new AnglerfishPickaxe(Tiers.DIAMOND, p),
+        p -> new AnglerfishPickaxeItem(Tiers.DIAMOND, p),
         new Item.Properties()
             .stacksTo(1)
             .rarity(Rarity.UNCOMMON)
             .attributes(
-                IcyPickaxeItem.createAttributes(
-                    Tiers.DIAMOND,
-                    1.0F,
-                    -2.8F
-                )
-            )
-            .attributes(
                 ItemAttributeModifiers.builder()
+                    .add(
+                        Attributes.ATTACK_DAMAGE,
+                        new AttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_ID,
+                            1.0 + Tiers.DIAMOND.getAttackDamageBonus(),
+                            AttributeModifier.Operation.ADD_VALUE
+                        ),
+                        EquipmentSlotGroup.MAINHAND
+                    )
+                    .add(
+                        Attributes.ATTACK_SPEED,
+                        new AttributeModifier(
+                            Item.BASE_ATTACK_SPEED_ID,
+                            -2.8F,
+                            AttributeModifier.Operation.ADD_VALUE
+                        ),
+                        EquipmentSlotGroup.MAINHAND
+                    )
                     .add(
                         Attributes.SUBMERGED_MINING_SPEED,
                         new AttributeModifier(

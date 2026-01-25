@@ -83,7 +83,7 @@ public class BlockEventListener {
             && breaker.isEyeInFluidType(Fluids.WATER.getFluidType())
         ) {
             ItemStack stack = event.getTool();
-            double chance = 1.0 / 64.0 *  ( 1 + stack.getEnchantmentLevel(
+            double chance = 1.0 / 32.0 *  ( 1 + stack.getEnchantmentLevel(
                 event.getLevel()
                     .holderLookup(Registries.ENCHANTMENT)
                     .getOrThrow(Enchantments.LURE)

@@ -11,8 +11,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class EncumberingPickaxe extends PickaxeItem {
-    public EncumberingPickaxe(Tier p_42961_, Properties p_42964_) {
+public class EncumberingPickaxeItem extends PickaxeItem {
+    public EncumberingPickaxeItem(Tier p_42961_, Properties p_42964_) {
         super(p_42961_, p_42964_);
     }
 

@@ -13,5 +13,5 @@
   "item.abslb_more_pickaxes.encumbering_pickaxe": "Encumbering Pickaxe",
   "tooltip.abslb_more_pickaxes.encumbering_pickaxe": "Mines Basic Stones Quicker; the Player Holding it cannot Pick up Items",
   "item.abslb_more_pickaxes.anglerfish_pickaxe": "Anglerfish Pickaxe",
-  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "Mines Fast in Water; Occasionally Catches a Fish when Mining Underwater"
+  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "Mines Fast in Water; Occasionally Catches a Fish when Mining Underwater\nObtained by Throwing a Diamond Pickaxe to a Glow Squid"
 }

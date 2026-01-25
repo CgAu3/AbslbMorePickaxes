@@ -11,8 +11,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class AnglerfishPickaxe extends PickaxeItem {
-    public AnglerfishPickaxe(Tier p_42961_, Properties p_42964_) {
+public class AnglerfishPickaxeItem extends PickaxeItem {
+    public AnglerfishPickaxeItem(Tier p_42961_, Properties p_42964_) {
         super(p_42961_, p_42964_);
     }
 
