@@ -1,0 +1,17 @@
+{
+  "itemGroup.abslb_more_pickaxes": "Abslb的更多镐子",
+  "item.abslb_more_pickaxes.moss_pickaxe": "苔藓镐",
+  "tooltip.abslb_more_pickaxes.moss_pickaxe": "能够飞快挖掘可被苔藓替换的方块",
+  "item.abslb_more_pickaxes.bedrock_pickaxe": "基岩镐",
+  "tooltip.abslb_more_pickaxes.bedrock_pickaxe": "能够挖掘基岩，或者也可能是大部分方块",
+  "item.abslb_more_pickaxes.icy_pickaxe": "冰雪镐",
+  "tooltip.abslb_more_pickaxes.icy_pickaxe": "能够轻松挖掘冰雪方块并获得掉落物",
+  "item.abslb_more_pickaxes.crowbar_pickaxe": "撬棍镐",
+  "tooltip.abslb_more_pickaxes.crowbar_pickaxe": "能够快速挖掘部分存储方块和功能方块",
+  "item.abslb_more_pickaxes.magnet_pickaxe": "磁铁镐",
+  "tooltip.abslb_more_pickaxes.magnet_pickaxe": "当破坏者手持它时，将方块挖掘掉落物拉到破坏者身上",
+  "item.abslb_more_pickaxes.encumbering_pickaxe": "累赘镐",
+  "tooltip.abslb_more_pickaxes.encumbering_pickaxe": "挖掘普通石头较快；手持它的玩家不能捡起掉落物",
+  "item.abslb_more_pickaxes.anglerfish_pickaxe": "鮟鱇镐",
+  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "在水中挖掘更快且偶尔会获得渔获；\n将一个钻石镐扔到发光鱿鱼身上获取"
+}
