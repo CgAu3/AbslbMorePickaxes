@@ -7,11 +7,9 @@ import io.github.cgau3.abslbmorepickaxes.item.EncumberingPickaxe;
 import io.github.cgau3.abslbmorepickaxes.item.IcyPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MagnetPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MossPickaxeItem;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -21,13 +19,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.component.Tool;
-import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-
-import java.util.List;
 
 import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;
 

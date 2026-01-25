@@ -1,7 +1,6 @@
 package io.github.cgau3.abslbmorepickaxes.item;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
