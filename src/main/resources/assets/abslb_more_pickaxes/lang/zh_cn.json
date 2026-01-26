@@ -13,5 +13,7 @@
   "item.abslb_more_pickaxes.encumbering_pickaxe": "累赘镐",
   "tooltip.abslb_more_pickaxes.encumbering_pickaxe": "挖掘普通石头较快；手持它的玩家不能捡起掉落物",
   "item.abslb_more_pickaxes.anglerfish_pickaxe": "鮟鱇镐",
-  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "在水中挖掘更快且偶尔会获得渔获；\n将一个钻石镐扔到发光鱿鱼身上获取"
+  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "在水中挖掘更快且偶尔会获得渔获；",
+  "tooltip.abslb_more_pickaxes.anglerfish_pickaxe_transmutation": "将一个钻石镐扔到发光鱿鱼身上获取",
+  "config.abslb_more_pickaxes.allow_anglerfish_pickaxe_transmutation": "允许鮟鱇镐嬗变转化\n（鮟鱇镐是否能通过把钻石镐扔给发光鱿鱼获取）"
 }

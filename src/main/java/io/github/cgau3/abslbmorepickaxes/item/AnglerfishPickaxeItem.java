@@ -1,5 +1,6 @@
 package io.github.cgau3.abslbmorepickaxes.item;
 
+import io.github.cgau3.abslbmorepickaxes.config.Config;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
@@ -32,7 +33,18 @@ public class AnglerfishPickaxeItem extends PickaxeItem {
         @NotNull List<Component> components,
         @NotNull TooltipFlag flag
     ) {
-        components.add(Component.translatable("tooltip.abslb_more_pickaxes.anglerfish_pickaxe"));
+        components.add(
+            Component.translatable(
+                "tooltip.abslb_more_pickaxes.anglerfish_pickaxe"
+            )
+        );
+        if (Config.allowAnglerfishPickaxeTransmutation) {
+            components.add(
+                Component.translatable(
+                    "tooltip.abslb_more_pickaxes.anglerfish_pickaxe_transmutation"
+                )
+            );
+        }
         super.appendHoverText(stack, context, components, flag);
     }
 }

@@ -1,5 +1,6 @@
 package io.github.cgau3.abslbmorepickaxes.event;
 
+import io.github.cgau3.abslbmorepickaxes.config.Config;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
 import net.minecraft.world.entity.GlowSquid;
 import net.minecraft.world.entity.item.ItemEntity;
@@ -20,6 +21,7 @@ public class EntityEventListener {
     public static void onLivingTick(EntityTickEvent.Post event) {
         if (event.getEntity() instanceof GlowSquid squid) {
             if (squid.level().isClientSide()) return;
+            if (!Config.allowAnglerfishPickaxeTransmutation) return;
             AABB box = squid.getBoundingBox().inflate(0.3);
 
             List<ItemEntity> list = squid.level().getEntitiesOfClass(
