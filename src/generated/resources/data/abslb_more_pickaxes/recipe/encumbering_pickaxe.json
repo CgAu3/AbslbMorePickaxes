@@ -3,10 +3,10 @@
   "category": "equipment",
   "key": {
     "A": {
-      "item": "minecraft:saddle"
+      "item": "minecraft:iron_pickaxe"
     },
     "B": {
-      "item": "minecraft:iron_pickaxe"
+      "item": "minecraft:saddle"
     },
     "C": {
       "item": "minecraft:anvil"
@@ -16,9 +16,9 @@
     }
   },
   "pattern": [
-    "QAQ",
     " B ",
-    " C "
+    "QAQ",
+    "  C"
   ],
   "result": {
     "count": 1,
