@@ -1,0 +1,31 @@
+除非另有说明，否则代码默认许可为 LGPL-3.0 (LICENSE-CODE)
+除非另有说明，否则非代码资产默认许可为 CC BY-NC-ND 4.0 (LICENSE-ASSETS)
+
+Source code is licensed under LGPL-3.0 (LICENSE-CODE) unless otherwise stated.
+Non-code assets are licensed under CC BY-NC-ND 4.0 (LICENSE-ASSETS) unless otherwise stated.
+
+本mod加了一些镐子：
+苔藓镐——能够非常快速地挖掘所有能被苔藓转化的方块
+冰雪镐——能够更快速、不消耗耐久地挖掘冰块、浮冰、蓝冰、雪块、雪片且产生掉落物
+累赘镐——手持它的时候不能捡起掉落物；挖掘普通石头更快（但是没有苔藓镐快）
+撬棍镐——能够快速拆一大堆人工方块（信标基座的压缩块、工作方块、红石方块、信标、末影箱等等）
+磁铁镐——手持时，挖掘的掉落物直接吸到破坏方块的家伙身上而不是掉在原地
+鮟鱇镐——在水下挖掘时，速度会提高且偶尔会随机产生钓鱼掉落物；不是通过合成获取，而是通过把钻石镐丢到发光鱿鱼身上获取
+基岩镐——能够挖掘并掉落几乎所有方块，包括硬度为-1的；它非常超模，但是默认状态下无法在生存模式中获取
+
+鮟鱇镐的默认获取方式并不是数据驱动的，因此本mod提供了可配置项，可以配置其是否可以通过默认的“把钻石镐扔给发光鱿鱼”这个获取方式获取。
+
+如果你的模组整合包（Mod-Pack）是非商业用途的，你可以自由地包含本模组；商业用途请事先联系作者。
+
+This mod adds several new pickaxes:
+Moss Pickaxe — Can mine all blocks that are convertible by moss extremely fast.
+Icy Pickaxe — Mines ice, packed ice, blue ice, snow blocks, and snow faster without consuming durability, and correctly drops items.
+Encumbering Pickaxe — While holding it, you cannot pick up dropped items. Mines normal stone faster (but not as fast as the Moss Pickaxe).
+Crowbar Pickaxe — Can quickly break a large number of artificial blocks, such as compressed blocks used for beacon bases, workstations, redstone blocks, beacons, ender chests, etc.
+Magnet Pickaxe — While holding it, mined drops are directly pulled to the entity that broke the block instead of falling on the ground.
+Anglerfish Pickaxe — When mining underwater, mining speed is increased and there is a chance to randomly generate fishing loot. It cannot be obtained via crafting; instead, it is obtained by throwing a diamond pickaxe onto a glow squid.
+Bedrock Pickaxe — Can mine and drop almost all blocks, including those with hardness -1. It is extremely overpowered and cannot be obtained in survival mode by default.
+
+The default method of obtaining the Anglerfish Pickaxe is not data-driven. Therefore, this mod provides a configuration option to control whether it can be obtained via the default method of “throwing a diamond pickaxe to a glow squid”.
+
+Non-commercial modpacks may freely include this mod. Please contact the author for commercial use.
