@@ -99,5 +99,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
             .add(Blocks.WAXED_EXPOSED_COPPER_BULB)
             .add(Blocks.WAXED_OXIDIZED_COPPER_BULB)
             .add(Blocks.WAXED_WEATHERED_COPPER_BULB);
+        tag(ModBlockTags.BEDROCK_PICKAXE_DROP_BLACKLIST)
+            .addTag(BlockTags.DOORS)
+            .addTags(BlockTags.BEDS)
+            .add(Blocks.POWDER_SNOW);
     }
 }

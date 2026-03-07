@@ -34,7 +34,10 @@ public class BlockEventListener {
     public static void onBlockDrop(BlockDropsEvent event) {
         Entity breaker = event.getBreaker();
         if (event.getTool().is(ModItems.BEDROCK_PICKAXE)) {
-            if (event.getDrops().isEmpty()) {
+            if (event.getDrops().isEmpty()
+                &&
+                !event.getState().is(ModBlockTags.BEDROCK_PICKAXE_DROP_BLACKLIST)
+            ) {
                 ItemStack stack = event.getState().getBlock().asItem().getDefaultInstance();
                 ItemEntity entity = new ItemEntity(
                     event.getLevel(),

@@ -28,4 +28,7 @@ public class ModBlockTags {
 
     public static final TagKey<Block> BASIC_STONE_BLOCKS =
         instanceTag(MOD_ID, "basic_stone_blocks");
+
+    public static final TagKey<Block> BEDROCK_PICKAXE_DROP_BLACKLIST =
+        instanceTag(MOD_ID, "bedrock_pickaxe_drop_blacklist");
 }
