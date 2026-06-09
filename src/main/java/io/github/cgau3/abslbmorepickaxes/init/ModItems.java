@@ -153,7 +153,7 @@ public class ModItems {
             () -> CreativeModeTab
                 .builder()
                 .title(Component.translatable("itemGroup.abslb_more_pickaxes"))
-                .withTabsBefore(CreativeModeTabs.COMBAT)
+                .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
                 .icon(() -> MOSS_PICKAXE.get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
                     output.accept(MOSS_PICKAXE.get());

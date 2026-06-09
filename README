@@ -15,7 +15,7 @@ Non-code assets are licensed under CC BY-NC-ND 4.0 (LICENSE-ASSETS) unless other
 
 鮟鱇镐的默认获取方式并不是数据驱动的，因此本mod提供了可配置项，可以配置其是否可以通过默认的“把钻石镐扔给发光鱿鱼”这个获取方式获取。
 
-如果你的模组整合包（Mod-Pack）是非商业用途的，你可以自由地包含本模组；商业用途请事先联系作者。
+你可以在整合包中包含本模组。
 
 This mod adds several new pickaxes:
 Moss Pickaxe — Can mine all blocks that are convertible by moss extremely fast.
@@ -28,4 +28,4 @@ Bedrock Pickaxe — Can mine and drop almost all blocks, including those with ha
 
 The default method of obtaining the Anglerfish Pickaxe is not data-driven. Therefore, this mod provides a configuration option to control whether it can be obtained via the default method of “throwing a diamond pickaxe to a glow squid”.
 
-Non-commercial modpacks may freely include this mod. Please contact the author for commercial use.
+You can include this mod in your modpack.
