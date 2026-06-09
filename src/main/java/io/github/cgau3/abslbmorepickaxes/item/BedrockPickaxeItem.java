@@ -3,6 +3,7 @@ package io.github.cgau3.abslbmorepickaxes.item;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.CommonColors;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
@@ -27,7 +28,11 @@ public class BedrockPickaxeItem extends PickaxeItem {
         @NotNull List<Component> components,
         @NotNull TooltipFlag flag
     ) {
-        components.add(Component.translatable("tooltip.abslb_more_pickaxes.bedrock_pickaxe"));
+        components.add(
+            Component.translatable(
+                "tooltip.abslb_more_pickaxes.bedrock_pickaxe"
+            ).withColor(CommonColors.GRAY)
+        );
         super.appendHoverText(stack, context, components, flag);
     }
 

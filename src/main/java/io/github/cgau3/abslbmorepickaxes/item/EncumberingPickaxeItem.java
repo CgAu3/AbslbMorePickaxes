@@ -2,6 +2,7 @@ package io.github.cgau3.abslbmorepickaxes.item;
 
 import io.github.cgau3.abslbmorepickaxes.init.ModBlockTags;
 import net.minecraft.network.chat.Component;
+import net.minecraft.util.CommonColors;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
@@ -32,7 +33,11 @@ public class EncumberingPickaxeItem extends PickaxeItem {
         @NotNull List<Component> components,
         @NotNull TooltipFlag flag
     ) {
-        components.add(Component.translatable("tooltip.abslb_more_pickaxes.encumbering_pickaxe"));
+        components.add(
+            Component.translatable(
+                "tooltip.abslb_more_pickaxes.encumbering_pickaxe"
+            ).withColor(CommonColors.GRAY)
+        );
         super.appendHoverText(stack, context, components, flag);
     }
 }

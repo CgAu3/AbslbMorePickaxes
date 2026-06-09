@@ -2,6 +2,8 @@ package io.github.cgau3.abslbmorepickaxes.item;
 
 import io.github.cgau3.abslbmorepickaxes.config.Config;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextColor;
+import net.minecraft.util.CommonColors;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.Tier;
@@ -36,13 +38,13 @@ public class AnglerfishPickaxeItem extends PickaxeItem {
         components.add(
             Component.translatable(
                 "tooltip.abslb_more_pickaxes.anglerfish_pickaxe"
-            )
+            ).withColor(CommonColors.GRAY)
         );
         if (Config.allowAnglerfishPickaxeTransmutation) {
             components.add(
                 Component.translatable(
                     "tooltip.abslb_more_pickaxes.anglerfish_pickaxe_transmutation"
-                )
+                ).withColor(TextColor.fromRgb(0x507090).getValue())
             );
         }
         super.appendHoverText(stack, context, components, flag);
