@@ -1,7 +1,7 @@
 package io.github.cgau3.abslbmorepickaxes.init;
 
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
@@ -13,7 +13,7 @@ public class ModBlockTags {
     private static TagKey<Block> instanceTag( String namespace, String id) {
         return TagKey.create(
             Registries.BLOCK,
-            ResourceLocation.fromNamespaceAndPath(namespace, id)
+            Identifier.fromNamespaceAndPath(namespace, id)
         );
     }
 

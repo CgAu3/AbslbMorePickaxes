@@ -4,6 +4,7 @@ import io.github.cgau3.abslbmorepickaxes.init.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -27,7 +28,8 @@ public class MultiPlayerGameModeMixin {
         if (minecraft.player == null || minecraft.level == null) {
             return;
         }
-        if (minecraft.player.getMainHandItem().is(ModItems.BEDROCK_PICKAXE)) {
+        ItemStack tool = minecraft.player.getMainHandItem().copy();
+        if (tool.is(ModItems.BEDROCK_PICKAXE)) {
             if (minecraft.player.blockActionRestricted(minecraft.level, pos, localPlayerMode)) return;
             Level level = minecraft.level;
             BlockState blockstate = level.getBlockState(pos);
@@ -36,7 +38,9 @@ public class MultiPlayerGameModeMixin {
             BlockState removedBlockState =
                 block.playerWillDestroy(level, pos, blockstate, this.minecraft.player);
             FluidState fluidstate = level.getFluidState(pos);
-            boolean flag = blockstate.onDestroyedByPlayer(level, pos, minecraft.player, false, fluidstate);
+            boolean flag = blockstate.onDestroyedByPlayer(
+                level, pos, minecraft.player, tool, false, fluidstate
+            );
             if (flag) {
                 block.destroy(level, pos, removedBlockState);
             }

@@ -15,5 +15,6 @@
   "item.abslb_more_pickaxes.anglerfish_pickaxe": "Anglerfish Pickaxe",
   "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "Mines Fast in Water; Occasionally Catches a Fish when Mining Underwater",
   "tooltip.abslb_more_pickaxes.anglerfish_pickaxe_transmutation": "Obtained by Throwing a Diamond Pickaxe to a Glow Squid",
-  "config.abslb_more_pickaxes.allow_anglerfish_pickaxe_transmutation": "Allow Anglerfish Pickaxe Transmutation\n(Whether Anglerfish Pickaxe can be obtained by throwing a Diamond Pickaxe to a Glow Squid)"
+  "config.abslb_more_pickaxes.allow_anglerfish_pickaxe_transmutation": "Allow Anglerfish Pickaxe Transmutation\n(Whether Anglerfish Pickaxe can be obtained by throwing a Diamond Pickaxe to a Glow Squid)",
+  "config.abslb_more_pickaxes.merge_creative_tab_into_vanilla": "Merge Creative Tab into Vanilla Tools Tab\n(Requires Game Restart to Apply)"
 }

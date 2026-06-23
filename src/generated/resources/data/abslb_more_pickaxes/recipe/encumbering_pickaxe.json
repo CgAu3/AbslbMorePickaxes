@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:iron_pickaxe"
-    },
-    "B": {
-      "item": "minecraft:saddle"
-    },
-    "C": {
-      "item": "minecraft:anvil"
-    },
-    "Q": {
-      "item": "minecraft:chain"
-    }
+    "A": "minecraft:iron_pickaxe",
+    "B": "minecraft:saddle",
+    "C": "minecraft:anvil",
+    "Q": "#minecraft:chains"
   },
   "pattern": [
     " B ",
@@ -21,7 +13,6 @@
     "  C"
   ],
   "result": {
-    "count": 1,
     "id": "abslb_more_pickaxes:encumbering_pickaxe"
   }
 }

@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:lodestone"
-    },
-    "B": {
-      "item": "minecraft:iron_ingot"
-    },
-    "C": {
-      "item": "minecraft:diamond_pickaxe"
-    }
+    "A": "minecraft:lodestone",
+    "B": "minecraft:iron_ingot",
+    "C": "minecraft:diamond_pickaxe"
   },
   "pattern": [
     "BAB",
@@ -18,7 +12,6 @@
     " B "
   ],
   "result": {
-    "count": 1,
     "id": "abslb_more_pickaxes:magnet_pickaxe"
   }
 }

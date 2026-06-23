@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:bedrock"
-    },
-    "B": {
-      "item": "minecraft:barrier"
-    },
-    "C": {
-      "item": "minecraft:netherite_pickaxe"
-    }
+    "A": "minecraft:bedrock",
+    "B": "minecraft:barrier",
+    "C": "minecraft:netherite_pickaxe"
   },
   "pattern": [
     "AAA",
@@ -18,7 +12,6 @@
     " B "
   ],
   "result": {
-    "count": 1,
     "id": "abslb_more_pickaxes:bedrock_pickaxe"
   }
 }

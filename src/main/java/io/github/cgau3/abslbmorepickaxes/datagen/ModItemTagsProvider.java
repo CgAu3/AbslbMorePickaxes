@@ -1,14 +1,13 @@
 package io.github.cgau3.abslbmorepickaxes.datagen;
 
+import io.github.cgau3.abslbmorepickaxes.init.ModItemTags;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.minecraft.world.item.Items;
+import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,14 +16,23 @@ import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;
 public class ModItemTagsProvider extends ItemTagsProvider {
     public ModItemTagsProvider(
         PackOutput output,
-        CompletableFuture<HolderLookup.Provider> lookupProvider,
-        CompletableFuture<TagLookup<Block>> blockTags,
-        @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, blockTags, MOD_ID, existingFileHelper);
+        CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider, MOD_ID);
     }
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
+        tag(ModItemTags.VARIOUS_TOOL_MATERIALS)
+            .add(Items.IRON_INGOT)
+            .add(Items.GOLD_INGOT)
+            .add(Items.BLUE_ICE)
+            .add(Items.BREEZE_ROD);
+        tag(ModItemTags.POWERFUL_TOOL_MATERIALS)
+            .add(Items.DIAMOND)
+            .add(Items.WITHER_SKELETON_SKULL);
+        tag(ModItemTags.SUPREME_TOOL_MATERIALS)
+            .add(Items.NETHER_STAR)
+            .add(Items.ENCHANTED_GOLDEN_APPLE);
         tag(ItemTags.DURABILITY_ENCHANTABLE)
             .add(ModItems.MOSS_PICKAXE.get())
             .add(ModItems.ICY_PICKAXE.get())

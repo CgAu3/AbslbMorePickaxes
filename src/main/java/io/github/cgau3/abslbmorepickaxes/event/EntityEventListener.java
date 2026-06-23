@@ -2,7 +2,7 @@ package io.github.cgau3.abslbmorepickaxes.event;
 
 import io.github.cgau3.abslbmorepickaxes.config.Config;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
-import net.minecraft.world.entity.GlowSquid;
+import net.minecraft.world.entity.animal.squid.GlowSquid;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;

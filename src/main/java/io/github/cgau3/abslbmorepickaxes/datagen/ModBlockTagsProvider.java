@@ -6,9 +6,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -17,9 +15,8 @@ import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;
 public class ModBlockTagsProvider extends BlockTagsProvider {
     public ModBlockTagsProvider(
         PackOutput output,
-        CompletableFuture<HolderLookup.Provider> lookupProvider,
-        @Nullable ExistingFileHelper existingFileHelper) {
-        super(output, lookupProvider, MOD_ID, existingFileHelper);
+        CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(output, lookupProvider, MOD_ID);
     }
 
     @Override
@@ -43,6 +40,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
             .add(Blocks.SMOOTH_BASALT)
             .add(Blocks.DRIPSTONE_BLOCK)
             .add(Blocks.SANDSTONE)
+            .add(Blocks.RED_SANDSTONE)
             .addTags(BlockTags.TERRACOTTA);
         tag(ModBlockTags.CROWBAR_MINABLE)
             .addTags(BlockTags.BEACON_BASE_BLOCKS)

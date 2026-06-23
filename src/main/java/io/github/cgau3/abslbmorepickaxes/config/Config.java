@@ -18,12 +18,22 @@ public class Config {
             .define("allow_anglerfish_pickaxe_transmutation", true)
         ;
 
+    private static final ModConfigSpec.BooleanValue MERGE_CREATIVE_TAB_INTO_VANILLA =
+        BUILDER
+            .translation(
+                "config.abslb_more_pickaxes.merge_creative_tab_into_vanilla"
+            )
+            .define("merge_creative_tab_into_vanilla", false)
+        ;
+
     public static final ModConfigSpec SPEC = BUILDER.build();
 
     public static boolean allowAnglerfishPickaxeTransmutation;
+    public static boolean mergeCreativeTabIntoVanilla;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
         allowAnglerfishPickaxeTransmutation = ALLOW_ANGLERFISH_PICKAXE_TRANSMUTATION.get();
+        mergeCreativeTabIntoVanilla = MERGE_CREATIVE_TAB_INTO_VANILLA.get();
     }
 }

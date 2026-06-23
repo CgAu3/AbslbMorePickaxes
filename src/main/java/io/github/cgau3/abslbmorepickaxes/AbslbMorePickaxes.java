@@ -1,5 +1,6 @@
 package io.github.cgau3.abslbmorepickaxes;
 
+import com.electronwill.nightconfig.core.file.FileConfig;
 import com.mojang.logging.LogUtils;
 import io.github.cgau3.abslbmorepickaxes.config.Config;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
@@ -11,9 +12,13 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
+
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(AbslbMorePickaxes.MOD_ID)
@@ -30,7 +35,10 @@ public class AbslbMorePickaxes {
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
-        ModItems.CREATIVE_MODE_TABS.register(modEventBus);
+        if (!earlyReadConfig()) {
+            ModItems.CREATIVE_MODE_TABS.register(modEventBus);
+        }
+
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (AbslbMorePickaxes) to respond directly to events.
@@ -61,6 +69,22 @@ public class AbslbMorePickaxes {
             // Some client setup code
             //LOGGER.info("HELLO FROM CLIENT SETUP");
             //LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        }
+    }
+
+    private boolean earlyReadConfig() {
+        Path path = FMLPaths.CONFIGDIR.get().resolve("abslb_more_pickaxes-common.toml");
+        if (Files.exists(path)) {
+            try (FileConfig fileConfig = FileConfig.of(path)) {
+                fileConfig.load();
+                Boolean value = fileConfig.get("merge_creative_tab_into_vanilla");
+                if (value != null) return value;
+                return false;
+            } catch (Exception ex) {
+                return false;
+            }
+        } else {
+            return false;
         }
     }
 }

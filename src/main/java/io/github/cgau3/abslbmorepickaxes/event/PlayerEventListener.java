@@ -1,10 +1,10 @@
 package io.github.cgau3.abslbmorepickaxes.event;
 
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
+import net.minecraft.util.TriState;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.util.TriState;
 import net.neoforged.neoforge.event.entity.player.ItemEntityPickupEvent;
 
 import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;

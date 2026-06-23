@@ -1,7 +1,7 @@
 package io.github.cgau3.abslbmorepickaxes.mixin;
 
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
-import net.minecraft.advancements.critereon.FishingHookPredicate;
+import net.minecraft.advancements.criterion.FishingHookPredicate;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.FluidTags;

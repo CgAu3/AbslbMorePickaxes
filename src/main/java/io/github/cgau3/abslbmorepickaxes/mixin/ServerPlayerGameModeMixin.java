@@ -28,7 +28,7 @@ public abstract class ServerPlayerGameModeMixin {
     @Shadow private GameType gameModeForPlayer;
 
     @Invoker("removeBlock")
-    abstract boolean invokeRemoveBlock(BlockPos pos, BlockState state, boolean canHarvest);
+    abstract boolean invokeRemoveBlock(BlockPos pos, BlockState state, boolean canHarvest, ItemStack toolStack);
 
     @Inject(
         method = "destroyBlock",
@@ -38,7 +38,8 @@ public abstract class ServerPlayerGameModeMixin {
         ),
         cancellable = true)
     public void onDestroyBlock(BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
-        if (player.getMainHandItem().is(ModItems.BEDROCK_PICKAXE)) {
+        ItemStack tool = player.getMainHandItem().copy();
+        if (tool.is(ModItems.BEDROCK_PICKAXE)) {
             BlockState blockstate = level.getBlockState(pos);
             BlockEntity blockentity = level.getBlockEntity(pos);
             Block block = blockstate.getBlock();
@@ -46,7 +47,7 @@ public abstract class ServerPlayerGameModeMixin {
             BlockState removedBlockState = block.playerWillDestroy(level, pos, blockstate, player);
 
             if (gameModeForPlayer.isCreative()) {
-                invokeRemoveBlock(pos, removedBlockState, false);
+                invokeRemoveBlock(pos, removedBlockState, false, tool);
                 cir.setReturnValue(true);
                 cir.cancel();
             } else {
@@ -54,7 +55,7 @@ public abstract class ServerPlayerGameModeMixin {
                 ItemStack itemstack1 = itemstack.copy();
                 boolean flag1 = removedBlockState.canHarvestBlock(level, pos, player);
                 itemstack.mineBlock(level, removedBlockState, pos, player);
-                boolean flag = invokeRemoveBlock(pos, removedBlockState, true);
+                boolean flag = invokeRemoveBlock(pos, removedBlockState, true, tool);
 
                 if (flag1 && flag) {
                     block.playerDestroy(level, player, pos, removedBlockState, blockentity, itemstack1);

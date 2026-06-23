@@ -1,61 +1,35 @@
 package io.github.cgau3.abslbmorepickaxes.datagen;
 
 import com.google.common.collect.ImmutableSet;
-import io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
-import net.minecraft.data.PackOutput;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
-import java.util.HashSet;
-import java.util.Set;
 
-public class ModItemModelProvider extends ItemModelProvider {
-    private final Set<Item> skipSet = new HashSet<>();
-
-    public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
-        super(output, AbslbMorePickaxes.MOD_ID, existingFileHelper);
-    }
-
+public class ModItemModelProvider {
     private static final ImmutableSet<DeferredHolder<Item, Item>> IGNORES =
         ImmutableSet.of();
+    private static final ImmutableSet<DeferredHolder<Item, Item>> FLAT_ITEMS =
+        ImmutableSet.of();
 
-    @Override
-    protected void registerModels() {
-        initSkip();
-
+    protected static void registerModels(ItemModelGenerators itemModels) {
         for (var entry :
             ModItems.ITEMS.getEntries().stream()
                 .filter(e -> !(e.get() instanceof BlockItem))
                 .toList()) {
             if (!IGNORES.contains(entry)) {
-                if (entry.get() instanceof PickaxeItem) {
-                    handheldItem(entry.get());
+                if (!FLAT_ITEMS.contains(entry)) {
+                    itemModels.generateFlatItem(entry.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
                 }
                 else {
-                    basicItem(entry.get());
+                    itemModels.generateFlatItem(entry.get(), ModelTemplates.FLAT_ITEM);
                 }
             }
         }
 
     }
-
-    protected Boolean isSkip(Item item) {
-        return !skipSet.contains(item);
-    }
-
-    protected void skip(Item item) {
-        skipSet.add(item);
-    }
-
-    protected void initSkip() {
-
-    }
-
-
 
 }

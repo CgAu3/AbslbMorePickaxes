@@ -2,21 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:lead"
-    },
-    "B": {
-      "item": "minecraft:iron_ingot"
-    },
-    "C": {
-      "item": "minecraft:diamond_pickaxe"
-    },
-    "D": {
-      "item": "minecraft:smithing_table"
-    },
-    "E": {
-      "item": "minecraft:stick"
-    }
+    "A": "minecraft:lead",
+    "B": "minecraft:iron_ingot",
+    "C": "minecraft:diamond_pickaxe",
+    "D": "minecraft:smithing_table",
+    "E": "minecraft:stick"
   },
   "pattern": [
     "D C",
@@ -24,7 +14,6 @@
     "EAB"
   ],
   "result": {
-    "count": 1,
     "id": "abslb_more_pickaxes:crowbar_pickaxe"
   }
 }

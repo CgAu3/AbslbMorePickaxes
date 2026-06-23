@@ -24,7 +24,7 @@ public class BlockBehaviorMixin {
         ItemStack toolItem = player.getMainHandItem();
         if (toolItem.is(ModItems.BEDROCK_PICKAXE)) {
             int i = net.neoforged.neoforge.event.EventHooks.doPlayerHarvestCheck(player, state, blockGetter, pos) ? 30 : 100;
-            cir.setReturnValue(player.getDigSpeed(state, pos) / i);
+            cir.setReturnValue(player.getDestroySpeed(state, pos) / i);
             cir.cancel();
         }
     }

@@ -4,6 +4,7 @@ import io.github.cgau3.abslbmorepickaxes.init.ModBlockTags;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,7 +14,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -83,7 +83,7 @@ public class BlockEventListener {
         }
         if (event.getTool().is(ModItems.ANGLERFISH_PICKAXE)
             && breaker != null
-            && breaker.isEyeInFluidType(Fluids.WATER.getFluidType())
+            && breaker.isEyeInFluid(FluidTags.WATER)
         ) {
             ItemStack stack = event.getTool();
             double chance = 1.0 / 32.0 *  ( 1 + stack.getEnchantmentLevel(
