@@ -18,13 +18,17 @@ public class BlockBehaviorMixin {
     public void onGetDestroyProgress(
         BlockState state,
         Player player,
-        BlockGetter blockGetter,
+        BlockGetter level,
         BlockPos pos,
         CallbackInfoReturnable<Float> cir) {
         ItemStack toolItem = player.getMainHandItem();
         if (toolItem.is(ModItems.BEDROCK_PICKAXE)) {
-            int i = net.neoforged.neoforge.event.EventHooks.doPlayerHarvestCheck(player, state, blockGetter, pos) ? 30 : 100;
-            cir.setReturnValue(player.getDestroySpeed(state, pos) / i);
+            float destroySpeed = state.getDestroySpeed(level, pos);
+            if (destroySpeed < 0 || destroySpeed > 1) {
+                destroySpeed = 1f;
+            }
+            int i = net.neoforged.neoforge.event.EventHooks.doPlayerHarvestCheck(player, state, level, pos) ? 30 : 100;
+            cir.setReturnValue(player.getDestroySpeed(state, pos) / destroySpeed / i);
             cir.cancel();
         }
     }

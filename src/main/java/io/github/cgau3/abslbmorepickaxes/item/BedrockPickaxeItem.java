@@ -11,9 +11,12 @@ import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
+import org.jspecify.annotations.NonNull;
+import org.jspecify.annotations.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class BedrockPickaxeItem extends Item implements ITooltipItem{
     public BedrockPickaxeItem(Properties p_42964_) {
@@ -32,6 +35,15 @@ public class BedrockPickaxeItem extends Item implements ITooltipItem{
             ).withColor(CommonColors.GRAY)
         );
         return components;
+    }
+
+    @Override
+    public <T extends LivingEntity> int damageItem(
+        @NonNull ItemStack stack,
+        int amount,
+        @Nullable T entity,
+        @NonNull Consumer<Item> onBroken) {
+        return 0;
     }
 
     @Override
