@@ -20,8 +20,13 @@ public class BuildCreativeTabEventListener {
             event.accept(ModItems.ENCUMBERING_PICKAXE.get());
             event.accept(ModItems.CROWBAR_PICKAXE.get());
             event.accept(ModItems.MAGNET_PICKAXE.get());
+            event.accept(ModItems.NEGATIVE_MINING_PICKAXE.get());
             event.accept(ModItems.ANGLERFISH_PICKAXE.get());
             event.accept(ModItems.BEDROCK_PICKAXE.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS
+            && Config.mergeCreativeTabIntoVanilla) {
+            event.accept(ModItems.NEGATIVE_EXISTENCE_BLOCK_ITEM.get());
         }
     }
 }

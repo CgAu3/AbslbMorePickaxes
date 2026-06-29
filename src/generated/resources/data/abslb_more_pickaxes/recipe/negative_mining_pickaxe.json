@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "minecraft:end_stone",
+    "B": "minecraft:ender_pearl",
+    "C": "minecraft:diamond_pickaxe",
+    "D": "minecraft:obsidian"
+  },
+  "pattern": [
+    "DDD",
+    "BCB",
+    "BAB"
+  ],
+  "result": {
+    "id": "abslb_more_pickaxes:negative_mining_pickaxe"
+  }
+}

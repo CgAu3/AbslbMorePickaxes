@@ -1,5 +1,6 @@
 package io.github.cgau3.abslbmorepickaxes.init;
 
+import io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes;
 import io.github.cgau3.abslbmorepickaxes.item.AnglerfishPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.BedrockPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.CrowbarPickaxeItem;
@@ -7,13 +8,16 @@ import io.github.cgau3.abslbmorepickaxes.item.EncumberingPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.IcyPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MagnetPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MossPickaxeItem;
+import io.github.cgau3.abslbmorepickaxes.item.NegativeMiningPickaxeItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
@@ -99,6 +103,31 @@ public class ModItems {
         () -> new Item.Properties()
             .stacksTo(1)
     );
+    public static final DeferredItem<NegativeMiningPickaxeItem> NEGATIVE_MINING_PICKAXE = ITEMS.registerItem(
+        "negative_mining_pickaxe",
+        p -> new NegativeMiningPickaxeItem(
+            ModToolMaterials.POWERFUL.applyToolProperties(
+                p,
+                BlockTags.MINEABLE_WITH_PICKAXE,
+                -2.8f,
+                1.0f,
+                0f
+            )
+        ),
+        () -> new Item.Properties()
+            .stacksTo(1)
+    );
+    public static final DeferredItem<BlockItem> NEGATIVE_EXISTENCE_BLOCK_ITEM = ITEMS.registerItem(
+        "negative_existence_block",
+        p -> new BlockItem(ModBlocks.NEGATIVE_EXISTENCE_BLOCK.get(),
+            new Item.Properties().useBlockDescriptionPrefix()
+            .setId(
+                ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(
+                    AbslbMorePickaxes.MOD_ID, "negative_existence_block")
+                )
+            )
+        )
+    );
     public static final DeferredItem<AnglerfishPickaxeItem> ANGLERFISH_PICKAXE = ITEMS.registerItem(
         "anglerfish_pickaxe",
         p -> new AnglerfishPickaxeItem(
@@ -159,6 +188,7 @@ public class ModItems {
         () -> new Item.Properties()
             .stacksTo(1)
             .rarity(Rarity.EPIC)
+            .fireResistant()
     );
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB =
@@ -175,6 +205,8 @@ public class ModItems {
                     output.accept(ENCUMBERING_PICKAXE.get());
                     output.accept(CROWBAR_PICKAXE.get());
                     output.accept(MAGNET_PICKAXE.get());
+                    output.accept(NEGATIVE_MINING_PICKAXE.get());
+                    output.accept(NEGATIVE_EXISTENCE_BLOCK_ITEM.get());
                     output.accept(ANGLERFISH_PICKAXE.get());
                     output.accept(BEDROCK_PICKAXE.get());
                 })

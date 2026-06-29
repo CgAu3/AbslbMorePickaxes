@@ -1,5 +1,6 @@
-// 26.1.2	2026-06-23T17:04:18.557946	Tags for minecraft:block mod id abslb_more_pickaxes
+// 26.1.2	2026-06-28T23:16:01.6372979	Tags for minecraft:block mod id abslb_more_pickaxes
 1d913fd29cebbea1e2ad527417a82006d71a6506 data/abslb_more_pickaxes/tags/block/basic_stone_blocks.json
 a6ca6d423ff399bbb101bac3fc81b88e3d11cfc5 data/abslb_more_pickaxes/tags/block/bedrock_pickaxe_drop_blacklist.json
 5b0bc68ab11921571826ce06e5e141a493c6641e data/abslb_more_pickaxes/tags/block/crowbar_minable.json
 eed8b2c40200d5316606585c713cbab920baff68 data/abslb_more_pickaxes/tags/block/icy_blocks.json
+160012b880f3c967539dcb5e5d31680cb7ac429f data/minecraft/tags/block/mineable/pickaxe.json

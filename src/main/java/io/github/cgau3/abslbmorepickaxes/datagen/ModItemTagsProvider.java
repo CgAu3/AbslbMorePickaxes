@@ -29,7 +29,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
             .add(Items.BREEZE_ROD);
         tag(ModItemTags.POWERFUL_TOOL_MATERIALS)
             .add(Items.DIAMOND)
-            .add(Items.WITHER_SKELETON_SKULL);
+            .add(Items.WITHER_SKELETON_SKULL)
+            .add(Items.END_CRYSTAL);
         tag(ModItemTags.SUPREME_TOOL_MATERIALS)
             .add(Items.NETHER_STAR)
             .add(Items.ENCHANTED_GOLDEN_APPLE);
@@ -39,6 +40,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
             .add(ModItems.ENCUMBERING_PICKAXE.get())
             .add(ModItems.CROWBAR_PICKAXE.get())
             .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.NEGATIVE_MINING_PICKAXE.get())
             .add(ModItems.ANGLERFISH_PICKAXE.get())
             .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.MINING_ENCHANTABLE)
@@ -47,6 +49,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
             .add(ModItems.ENCUMBERING_PICKAXE.get())
             .add(ModItems.CROWBAR_PICKAXE.get())
             .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.NEGATIVE_MINING_PICKAXE.get())
             .add(ModItems.ANGLERFISH_PICKAXE.get())
             .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.MINING_LOOT_ENCHANTABLE)
@@ -55,6 +58,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
             .add(ModItems.ENCUMBERING_PICKAXE.get())
             .add(ModItems.CROWBAR_PICKAXE.get())
             .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.NEGATIVE_MINING_PICKAXE.get())
             .add(ModItems.ANGLERFISH_PICKAXE.get())
             .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.PICKAXES)
@@ -63,6 +67,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
             .add(ModItems.ENCUMBERING_PICKAXE.get())
             .add(ModItems.CROWBAR_PICKAXE.get())
             .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.NEGATIVE_MINING_PICKAXE.get())
             .add(ModItems.ANGLERFISH_PICKAXE.get())
             .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.CLUSTER_MAX_HARVESTABLES)
@@ -71,6 +76,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
             .add(ModItems.ENCUMBERING_PICKAXE.get())
             .add(ModItems.CROWBAR_PICKAXE.get())
             .add(ModItems.MAGNET_PICKAXE.get())
+            .add(ModItems.NEGATIVE_MINING_PICKAXE.get())
             .add(ModItems.ANGLERFISH_PICKAXE.get())
             .add(ModItems.BEDROCK_PICKAXE.get());
         tag(ItemTags.FISHING_ENCHANTABLE)

@@ -16,5 +16,11 @@
   "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "在水中挖掘更快且偶尔会获得渔获；",
   "tooltip.abslb_more_pickaxes.anglerfish_pickaxe_transmutation": "将一个钻石镐扔到发光鱿鱼身上获取",
   "config.abslb_more_pickaxes.allow_anglerfish_pickaxe_transmutation": "允许鮟鱇镐嬗变转化\n（鮟鱇镐是否能通过把钻石镐扔给发光鱿鱼获取）",
-  "config.abslb_more_pickaxes.merge_creative_tab_into_vanilla": "创造模式物品栏融入原版工具栏\n（需要重启游戏）"
+  "config.abslb_more_pickaxes.merge_creative_tab_into_vanilla": "创造模式物品栏融入原版工具栏\n（需要重启游戏）",
+  "item.abslb_more_pickaxes.negative_mining_pickaxe": "负挖掘镐",
+  "tooltip.abslb_more_pickaxes.negative_mining_pickaxe": "挖硬的方块快，软的方块慢",
+  "tooltip.abslb_more_pickaxes.negative_mining_pickaxe_rightclick": "右键以挖穿空无，比如阻碍你从一个末地岛抵达另一个的空无",
+  "tooltip.abslb_more_pickaxes.negative_mining_pickaxe_rightclick2": "（这是通过在前方脚下制造临时垫脚方块实现的，受到挖掘速度与距离增幅）",
+  "block.abslb_more_pickaxes.negative_existence_block": "负存在",
+  "item.abslb_more_pickaxes.negative_existence_block": "负存在"
 }

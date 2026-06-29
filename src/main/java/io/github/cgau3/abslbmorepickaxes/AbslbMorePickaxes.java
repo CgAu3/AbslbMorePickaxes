@@ -3,6 +3,7 @@ package io.github.cgau3.abslbmorepickaxes;
 import com.electronwill.nightconfig.core.file.FileConfig;
 import com.mojang.logging.LogUtils;
 import io.github.cgau3.abslbmorepickaxes.config.Config;
+import io.github.cgau3.abslbmorepickaxes.init.ModBlocks;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -32,6 +33,7 @@ public class AbslbMorePickaxes {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModBlocks.BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered

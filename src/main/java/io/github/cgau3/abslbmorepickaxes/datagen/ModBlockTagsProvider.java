@@ -1,6 +1,7 @@
 package io.github.cgau3.abslbmorepickaxes.datagen;
 
 import io.github.cgau3.abslbmorepickaxes.init.ModBlockTags;
+import io.github.cgau3.abslbmorepickaxes.init.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -22,6 +23,12 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
     @Override
     @SuppressWarnings("unchecked")
     protected void addTags(HolderLookup.@NotNull Provider provider) {
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+            .add(ModBlocks.NEGATIVE_EXISTENCE_BLOCK.get());
+        tag(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
+            .add(ModBlocks.NEGATIVE_EXISTENCE_BLOCK.get());
+        tag(BlockTags.DAMPENS_VIBRATIONS)
+            .add(ModBlocks.NEGATIVE_EXISTENCE_BLOCK.get());
         tag(ModBlockTags.ICY_BLOCKS)
             .add(Blocks.SNOW)
             .add(Blocks.SNOW_BLOCK)

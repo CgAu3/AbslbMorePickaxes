@@ -1,6 +1,7 @@
 {
   "values": [
     "minecraft:diamond",
-    "minecraft:wither_skeleton_skull"
+    "minecraft:wither_skeleton_skull",
+    "minecraft:end_crystal"
   ]
 }

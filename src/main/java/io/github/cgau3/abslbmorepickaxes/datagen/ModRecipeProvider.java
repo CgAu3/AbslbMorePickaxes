@@ -118,6 +118,16 @@ public class ModRecipeProvider extends RecipeProvider {
             .define('C', Items.DIAMOND_PICKAXE)
             .unlockedBy("has_item", has(Items.LODESTONE))
             .save(output);
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.NEGATIVE_MINING_PICKAXE)
+            .pattern("DDD")
+            .pattern("BCB")
+            .pattern("BAB")
+            .define('A', Items.END_STONE)
+            .define('B', Items.ENDER_PEARL)
+            .define('C', Items.DIAMOND_PICKAXE)
+            .define('D', Items.OBSIDIAN)
+            .unlockedBy("has_item", has(Items.END_STONE))
+            .save(output);
         ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.BEDROCK_PICKAXE)
             .pattern("AAA")
             .pattern(" C ")

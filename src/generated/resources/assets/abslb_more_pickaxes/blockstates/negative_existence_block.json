@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "abslb_more_pickaxes:block/negative_existence_block"
+    },
+    "age=1": {
+      "model": "abslb_more_pickaxes:block/negative_existence_block_unstable"
+    }
+  }
+}
