@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "minecraft:iron_pickaxe",
+    "F": "minecraft:cod",
+    "O": "minecraft:orange_dye",
+    "R": "minecraft:redstone",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    " A ",
+    "ROF",
+    "RSF"
+  ],
+  "result": {
+    "id": "abslb_more_pickaxes:crab_claw_pickaxe"
+  }
+}

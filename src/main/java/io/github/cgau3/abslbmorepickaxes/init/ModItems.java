@@ -75,6 +75,59 @@ public class ModItems {
         () -> new Item.Properties()
             .stacksTo(1)
     );
+    public static final DeferredItem<Item> CRAB_CLAW_PICKAXE = ITEMS.registerItem(
+        "crab_claw_pickaxe",
+        p -> new Item(
+            ModToolMaterials.VARIOUS.applyToolProperties(
+                p,
+                BlockTags.MINEABLE_WITH_PICKAXE,
+                1.0f,
+                -2.8f,
+                0f
+            ).attributes(
+                ItemAttributeModifiers.builder()
+                    .add(
+                        Attributes.ATTACK_DAMAGE,
+                        new AttributeModifier(
+                            Item.BASE_ATTACK_DAMAGE_ID,
+                            1.0 + ModToolMaterials.POWERFUL.attackDamageBonus(),
+                            AttributeModifier.Operation.ADD_VALUE
+                        ),
+                        EquipmentSlotGroup.MAINHAND
+                    )
+                    .add(
+                        Attributes.ATTACK_SPEED,
+                        new AttributeModifier(
+                            Item.BASE_ATTACK_SPEED_ID,
+                            -2.8F,
+                            AttributeModifier.Operation.ADD_VALUE
+                        ),
+                        EquipmentSlotGroup.MAINHAND
+                    )
+                    .add(
+                        Attributes.BLOCK_INTERACTION_RANGE,
+                        new AttributeModifier(
+                            Identifier.fromNamespaceAndPath(MOD_ID, "crab_claw_pickaxe"),
+                            2.0,
+                            AttributeModifier.Operation.ADD_VALUE
+                        ),
+                        EquipmentSlotGroup.HAND
+                    )
+                    .add(
+                        Attributes.ENTITY_INTERACTION_RANGE,
+                        new AttributeModifier(
+                            Identifier.fromNamespaceAndPath(MOD_ID, "crab_claw_pickaxe"),
+                            2.0,
+                            AttributeModifier.Operation.ADD_VALUE
+                        ),
+                        EquipmentSlotGroup.HAND
+                    )
+                    .build()
+            )
+        ),
+        () -> new Item.Properties()
+            .stacksTo(1)
+    );
     public static final DeferredItem<CrowbarPickaxeItem> CROWBAR_PICKAXE = ITEMS.registerItem(
         "crowbar_pickaxe",
         p -> new CrowbarPickaxeItem(
@@ -137,12 +190,7 @@ public class ModItems {
                 1.0f,
                 -2.8f,
                 0f
-            )
-        ),
-        () -> new Item.Properties()
-            .stacksTo(1)
-            .rarity(Rarity.UNCOMMON)
-            .attributes(
+            ).attributes(
                 ItemAttributeModifiers.builder()
                     .add(
                         Attributes.ATTACK_DAMAGE,
@@ -173,6 +221,10 @@ public class ModItems {
                     )
                     .build()
             )
+        ),
+        () -> new Item.Properties()
+            .stacksTo(1)
+            .rarity(Rarity.UNCOMMON)
     );
     public static final DeferredItem<BedrockPickaxeItem> BEDROCK_PICKAXE = ITEMS.registerItem(
         "bedrock_pickaxe",
@@ -203,6 +255,7 @@ public class ModItems {
                     output.accept(MOSS_PICKAXE.get());
                     output.accept(ICY_PICKAXE.get());
                     output.accept(ENCUMBERING_PICKAXE.get());
+                    output.accept(CRAB_CLAW_PICKAXE.get());
                     output.accept(CROWBAR_PICKAXE.get());
                     output.accept(MAGNET_PICKAXE.get());
                     output.accept(NEGATIVE_MINING_PICKAXE.get());

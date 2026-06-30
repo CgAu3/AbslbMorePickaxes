@@ -22,5 +22,6 @@
   "tooltip.abslb_more_pickaxes.negative_mining_pickaxe_rightclick": "Right click to mine through emptiness, such as that hinders you from one End island to another",
   "tooltip.abslb_more_pickaxes.negative_mining_pickaxe_rightclick2": "(This is achieved by creating temporary floor blocks in front of you, buffed by mining speed and reach)",
   "block.abslb_more_pickaxes.negative_existence_block": "Negative Existence",
-  "item.abslb_more_pickaxes.negative_existence_block": "Negative Existence"
+  "item.abslb_more_pickaxes.negative_existence_block": "Negative Existence",
+  "item.abslb_more_pickaxes.crab_claw_pickaxe": "Crabclaw Pickaxe"
 }

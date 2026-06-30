@@ -18,6 +18,7 @@ public class BuildCreativeTabEventListener {
             event.accept(ModItems.MOSS_PICKAXE.get());
             event.accept(ModItems.ICY_PICKAXE.get());
             event.accept(ModItems.ENCUMBERING_PICKAXE.get());
+            event.accept(ModItems.CRAB_CLAW_PICKAXE.get());
             event.accept(ModItems.CROWBAR_PICKAXE.get());
             event.accept(ModItems.MAGNET_PICKAXE.get());
             event.accept(ModItems.NEGATIVE_MINING_PICKAXE.get());

@@ -97,6 +97,18 @@ public class ModRecipeProvider extends RecipeProvider {
             .unlockedBy("has_item", has(Items.ANVIL))
             .unlockedBy("has_item", has(Items.SADDLE))
             .save(output);
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.CRAB_CLAW_PICKAXE)
+            .pattern(" A ")
+            .pattern("ROF")
+            .pattern("RSF")
+            .define('F', Items.COD)
+            .define('A', Items.IRON_PICKAXE)
+            .define('R', Items.REDSTONE)
+            .define('O', Items.ORANGE_DYE)
+            .define('S', Items.STICK)
+            .unlockedBy("has_item", has(Items.COD))
+            .unlockedBy("has_item", has(Items.REDSTONE))
+            .save(output);
         ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.CROWBAR_PICKAXE)
             .pattern("D C")
             .pattern(" B ")

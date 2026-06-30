@@ -19,7 +19,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
@@ -36,11 +35,6 @@ public class NegativeMiningPickaxeItem extends Item implements ITooltipItem{
 
     public static int roundToMultiple(double value, int divisor) {
         return Math.toIntExact(Math.round(value / divisor) * divisor);
-    }
-
-    @Override
-    public @NonNull ItemUseAnimation getUseAnimation(@NonNull ItemStack itemStack) {
-        return ItemUseAnimation.BUNDLE;
     }
 
     private static int getEndStoneMiningTicks(Player player) {
@@ -92,13 +86,15 @@ public class NegativeMiningPickaxeItem extends Item implements ITooltipItem{
                     if (tool != null && !player.isCreative()) {
                         itemstack.hurtAndBreak(tool.damagePerBlock(), player, hand);
                     }
-                    player.getCooldowns().addCooldown(itemstack, getEndStoneMiningTicks(player));
+                    int t = getEndStoneMiningTicks(player);
+                    player.getCooldowns().addCooldown(itemstack, t);
                     level.setBlockAndUpdate(
                         pos,
                         ModBlocks.NEGATIVE_EXISTENCE_BLOCK.get().defaultBlockState()
                     );
                     //level.gameEvent(player, GameEvent.BLOCK_DESTROY, pos);
                 }
+                player.swing(hand);
                 level.playSound(player, pos, SoundEvents.GRASS_BREAK, SoundSource.BLOCKS, 1.0F, 1.0F);
                 return InteractionResult.CONSUME;
             }

@@ -22,5 +22,6 @@
   "tooltip.abslb_more_pickaxes.negative_mining_pickaxe_rightclick": "右键以挖穿空无，比如阻碍你从一个末地岛抵达另一个的空无",
   "tooltip.abslb_more_pickaxes.negative_mining_pickaxe_rightclick2": "（这是通过在前方脚下制造临时垫脚方块实现的，受到挖掘速度与距离增幅）",
   "block.abslb_more_pickaxes.negative_existence_block": "负存在",
-  "item.abslb_more_pickaxes.negative_existence_block": "负存在"
+  "item.abslb_more_pickaxes.negative_existence_block": "负存在",
+  "item.abslb_more_pickaxes.crab_claw_pickaxe": "蟹钳镐"
 }
