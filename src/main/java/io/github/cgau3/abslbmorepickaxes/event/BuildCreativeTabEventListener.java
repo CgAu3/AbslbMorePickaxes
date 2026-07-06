@@ -17,6 +17,7 @@ public class BuildCreativeTabEventListener {
             && Config.mergeCreativeTabIntoVanilla) {
             event.accept(ModItems.MOSS_PICKAXE.get());
             event.accept(ModItems.ICY_PICKAXE.get());
+            event.accept(ModItems.SMELTER_PICKAXE.get());
             event.accept(ModItems.ENCUMBERING_PICKAXE.get());
             event.accept(ModItems.CRAB_CLAW_PICKAXE.get());
             event.accept(ModItems.CROWBAR_PICKAXE.get());

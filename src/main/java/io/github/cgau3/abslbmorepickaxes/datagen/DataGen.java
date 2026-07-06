@@ -18,5 +18,6 @@ public class DataGen {
 
         event.createProvider(ModModelProvider::new);
 
+        event.createProvider(ModLootModifierProvider::new);
     }
 }

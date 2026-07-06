@@ -7,7 +7,7 @@ public class ModToolMaterials {
     public static final ToolMaterial VARIOUS =
         new ToolMaterial(
         BlockTags.INCORRECT_FOR_IRON_TOOL,
-            199,
+            250,
             6.0F,
             2.0F,
             18,
@@ -16,7 +16,7 @@ public class ModToolMaterials {
     public static final ToolMaterial POWERFUL =
         new ToolMaterial(
             BlockTags.INCORRECT_FOR_DIAMOND_TOOL,
-            1999,
+            1599,
             8.0F,
             3.0F,
             15,

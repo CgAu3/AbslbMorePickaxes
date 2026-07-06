@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:end_crystal"
+            "items": "minecraft:blaze_rod"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "abslb_more_pickaxes:negative_mining_pickaxe"
+        "recipe": "abslb_more_pickaxes:smelter_pickaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "abslb_more_pickaxes:negative_mining_pickaxe"
+      "abslb_more_pickaxes:smelter_pickaxe"
     ]
   }
 }

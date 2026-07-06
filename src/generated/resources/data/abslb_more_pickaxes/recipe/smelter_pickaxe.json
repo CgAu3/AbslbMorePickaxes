@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "minecraft:blaze_rod",
+    "B": "minecraft:iron_pickaxe",
+    "C": "minecraft:blast_furnace"
+  },
+  "pattern": [
+    "AAA",
+    " B ",
+    " C "
+  ],
+  "result": {
+    "id": "abslb_more_pickaxes:smelter_pickaxe"
+  }
+}

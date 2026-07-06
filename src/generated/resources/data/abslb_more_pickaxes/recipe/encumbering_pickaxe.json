@@ -3,14 +3,13 @@
   "category": "equipment",
   "key": {
     "A": "minecraft:iron_pickaxe",
-    "B": "minecraft:saddle",
-    "C": "minecraft:anvil",
+    "B": "minecraft:black_dye",
+    "C": "minecraft:copper_block",
     "Q": "#minecraft:chains"
   },
   "pattern": [
-    " B ",
-    "QAQ",
-    "  C"
+    "AB",
+    "QC"
   ],
   "result": {
     "id": "abslb_more_pickaxes:encumbering_pickaxe"

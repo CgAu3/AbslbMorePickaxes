@@ -9,6 +9,7 @@ import io.github.cgau3.abslbmorepickaxes.item.IcyPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MagnetPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.MossPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.NegativeMiningPickaxeItem;
+import io.github.cgau3.abslbmorepickaxes.item.SmelterPickaxeItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
@@ -50,6 +51,20 @@ public class ModItems {
     public static final DeferredItem<IcyPickaxeItem> ICY_PICKAXE = ITEMS.registerItem(
         "icy_pickaxe",
         p -> new IcyPickaxeItem(
+            ModToolMaterials.VARIOUS.applyToolProperties(
+                p,
+                BlockTags.MINEABLE_WITH_PICKAXE,
+                1.0f,
+                -2.8f,
+                0f
+            )
+        ),
+        () -> new Item.Properties()
+            .stacksTo(1)
+    );
+    public static final DeferredItem<SmelterPickaxeItem> SMELTER_PICKAXE = ITEMS.registerItem(
+        "smelter_pickaxe",
+        p -> new SmelterPickaxeItem(
             ModToolMaterials.VARIOUS.applyToolProperties(
                 p,
                 BlockTags.MINEABLE_WITH_PICKAXE,
@@ -254,6 +269,7 @@ public class ModItems {
                 .displayItems((parameters, output) -> {
                     output.accept(MOSS_PICKAXE.get());
                     output.accept(ICY_PICKAXE.get());
+                    output.accept(SMELTER_PICKAXE.get());
                     output.accept(ENCUMBERING_PICKAXE.get());
                     output.accept(CRAB_CLAW_PICKAXE.get());
                     output.accept(CROWBAR_PICKAXE.get());

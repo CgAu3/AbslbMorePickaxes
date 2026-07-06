@@ -7,6 +7,7 @@ Non-code assets are licensed under CC BY-NC-ND 4.0 (LICENSE-ASSETS) unless other
 本mod加了一些镐子：
 苔藓镐——能够非常快速地挖掘所有能被苔藓转化的方块
 冰雪镐——能够更快速、不消耗耐久地挖掘冰块、浮冰、蓝冰、雪块、雪片且产生掉落物
+熔炼镐——熔炼掉落物。如果方块是圆石或石头，不消耗耐久且熔炼为平滑石
 累赘镐——手持它的时候不能捡起掉落物；挖掘普通石头更快（但是没有苔藓镐快）
 螃钳镐——手持时，+2方块和生物交互距离
 撬棍镐——能够快速拆一大堆人工方块（信标基座的压缩块、工作方块、红石方块、信标、末影箱等等）
@@ -22,8 +23,9 @@ Non-code assets are licensed under CC BY-NC-ND 4.0 (LICENSE-ASSETS) unless other
 This mod adds several new pickaxes:
 Moss Pickaxe — Can mine all blocks that are convertible by moss extremely fast.
 Icy Pickaxe — Mines ice, packed ice, blue ice, snow blocks, and snow faster without consuming durability, and correctly drops items.
+Smelter Pickaxe — Smelts drops. If the block is stone or cobblestone, does not use durability and smelts into smooth stone
 Encumbering Pickaxe — While holding it, you cannot pick up dropped items. Mines normal stone faster (but not as fast as the Moss Pickaxe).
-Crabclaw Pickaxe — +2 Block or entity interaction range when in hand.
+Crab Claw Pickaxe — +2 Block or entity interaction range when in hand.
 Crowbar Pickaxe — Can quickly break a large number of artificial blocks, such as compressed blocks used for beacon bases, workstations, redstone blocks, beacons, ender chests, etc.
 Magnet Pickaxe — While holding it, mined drops are directly pulled to the entity that broke the block instead of falling on the ground.
 Negative Mining Pickaxe — Mines hard blocks fast, but soft blocks slow. Right click to "mine through" emptiness (create flooring blocks), buffed by mining speed and reach.

@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import io.github.cgau3.abslbmorepickaxes.config.Config;
 import io.github.cgau3.abslbmorepickaxes.init.ModBlocks;
 import io.github.cgau3.abslbmorepickaxes.init.ModItems;
+import io.github.cgau3.abslbmorepickaxes.init.ModLootModifiers;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -36,6 +37,7 @@ public class AbslbMorePickaxes {
         ModBlocks.BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ModItems.ITEMS.register(modEventBus);
+        ModLootModifiers.GLOBAL_LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         if (!earlyReadConfig()) {
             ModItems.CREATIVE_MODE_TABS.register(modEventBus);
