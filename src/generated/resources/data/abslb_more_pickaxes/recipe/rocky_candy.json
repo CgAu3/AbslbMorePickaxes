@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:sugar",
+    "B": "minecraft:quartz"
+  },
+  "pattern": [
+    "AB",
+    "BA"
+  ],
+  "result": {
+    "count": 3,
+    "id": "abslb_more_pickaxes:rocky_candy"
+  }
+}

@@ -2,7 +2,8 @@
   "values": [
     "minecraft:iron_ingot",
     "minecraft:gold_ingot",
-    "minecraft:blue_ice",
-    "minecraft:breeze_rod"
+    "minecraft:blaze_rod",
+    "minecraft:breeze_rod",
+    "abslb_more_pickaxes:rocky_candy"
   ]
 }

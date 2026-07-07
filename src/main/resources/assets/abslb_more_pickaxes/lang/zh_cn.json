@@ -25,5 +25,6 @@
   "item.abslb_more_pickaxes.negative_existence_block": "负存在",
   "item.abslb_more_pickaxes.crab_claw_pickaxe": "蟹钳镐",
   "item.abslb_more_pickaxes.smelter_pickaxe": "熔炼镐",
-  "tooltip.abslb_more_pickaxes.smelter_pickaxe": "熔炼掉落物。如果方块是圆石或石头，不消耗耐久且熔炼为平滑石"
+  "tooltip.abslb_more_pickaxes.smelter_pickaxe": "熔炼掉落物。如果方块是圆石或石头，不消耗耐久且熔炼为平滑石",
+  "item.abslb_more_pickaxes.rocky_candy": "石磊糖"
 }

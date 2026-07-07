@@ -13,8 +13,8 @@ import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;
 public class BuildCreativeTabEventListener {
     @SubscribeEvent
     public static void AddItemsToVanilla(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES
-            && Config.mergeCreativeTabIntoVanilla) {
+        if (!Config.mergeCreativeTabIntoVanilla) return;
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.MOSS_PICKAXE.get());
             event.accept(ModItems.ICY_PICKAXE.get());
             event.accept(ModItems.SMELTER_PICKAXE.get());
@@ -26,9 +26,11 @@ public class BuildCreativeTabEventListener {
             event.accept(ModItems.ANGLERFISH_PICKAXE.get());
             event.accept(ModItems.BEDROCK_PICKAXE.get());
         }
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS
-            && Config.mergeCreativeTabIntoVanilla) {
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModItems.NEGATIVE_EXISTENCE_BLOCK_ITEM.get());
+        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.ROCKY_CANDY.get());
         }
     }
 }

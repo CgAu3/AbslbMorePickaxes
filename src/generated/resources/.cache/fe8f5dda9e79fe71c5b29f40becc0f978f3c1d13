@@ -1,11 +1,11 @@
-// 26.1.2	2026-06-29T01:28:48.0687723	Tags for minecraft:item mod id abslb_more_pickaxes
-5a1568cc0d5b3ea5889fdc9f265512a56107e060 data/abslb_more_pickaxes/tags/item/powerful_tool_materials.json
+// 26.1.2	2026-07-07T17:40:12.5775539	Tags for minecraft:item mod id abslb_more_pickaxes
+4025ee52f05d9b8b9f1835372f6464b7bd4a2ac7 data/abslb_more_pickaxes/tags/item/powerful_tool_materials.json
 73d175f30b8ae0359bed413c9ff3231af7d600f1 data/abslb_more_pickaxes/tags/item/supreme_tool_materials.json
-117ff1b52dcc467954d198baca0be191590c1899 data/abslb_more_pickaxes/tags/item/various_tool_materials.json
-b622e0c3d701e9e65f55c45649e9084fd021d49b data/minecraft/tags/item/cluster_max_harvestables.json
-b622e0c3d701e9e65f55c45649e9084fd021d49b data/minecraft/tags/item/enchantable/durability.json
+c64b4326a971872c75c24be8c32836437fb5da2a data/abslb_more_pickaxes/tags/item/various_tool_materials.json
+d886861516dcd7427d4bec215465d46111d5b308 data/minecraft/tags/item/cluster_max_harvestables.json
+d886861516dcd7427d4bec215465d46111d5b308 data/minecraft/tags/item/enchantable/durability.json
 b243fa86aea12aed80197623b2ab4ca9c383e373 data/minecraft/tags/item/enchantable/fishing.json
-b622e0c3d701e9e65f55c45649e9084fd021d49b data/minecraft/tags/item/enchantable/mining.json
-b622e0c3d701e9e65f55c45649e9084fd021d49b data/minecraft/tags/item/enchantable/mining_loot.json
+d886861516dcd7427d4bec215465d46111d5b308 data/minecraft/tags/item/enchantable/mining.json
+d886861516dcd7427d4bec215465d46111d5b308 data/minecraft/tags/item/enchantable/mining_loot.json
 b243fa86aea12aed80197623b2ab4ca9c383e373 data/minecraft/tags/item/fishes.json
-b622e0c3d701e9e65f55c45649e9084fd021d49b data/minecraft/tags/item/pickaxes.json
+d886861516dcd7427d4bec215465d46111d5b308 data/minecraft/tags/item/pickaxes.json

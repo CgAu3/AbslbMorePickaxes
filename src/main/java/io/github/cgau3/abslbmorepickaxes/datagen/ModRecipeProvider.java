@@ -117,6 +117,14 @@ public class ModRecipeProvider extends RecipeProvider {
             .unlockedBy("has_item", has(Items.ORANGE_DYE))
             .unlockedBy("has_item", has(Items.REDSTONE))
             .save(output);
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.FOOD, ModItems.ROCKY_CANDY, 3)
+            .pattern("AB")
+            .pattern("BA")
+            .define('B', Items.QUARTZ)
+            .define('A', Items.SUGAR)
+            .unlockedBy("has_item", has(Items.SUGAR))
+            .unlockedBy("has_item", has(Items.QUARTZ))
+            .save(output);
         ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.CROWBAR_PICKAXE)
             .pattern("D C")
             .pattern(" B ")

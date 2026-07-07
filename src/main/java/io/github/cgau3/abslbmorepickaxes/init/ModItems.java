@@ -15,15 +15,20 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -142,6 +147,26 @@ public class ModItems {
         ),
         () -> new Item.Properties()
             .stacksTo(1)
+    );
+    public static final DeferredItem<Item> ROCKY_CANDY = ITEMS.registerItem(
+        "rocky_candy",
+        Item::new,
+        () -> new Item.Properties()
+            .food(
+                new FoodProperties.Builder()
+                    .nutrition(1)
+                    .saturationModifier(0.3f)
+                    .alwaysEdible()
+                    .build(),
+                Consumable.builder()
+                    .onConsume(
+                        new ApplyStatusEffectsConsumeEffect(
+                            new MobEffectInstance(MobEffects.HASTE, 200, 1),
+                            1f
+                        )
+                    )
+                    .build()
+            )
     );
     public static final DeferredItem<CrowbarPickaxeItem> CROWBAR_PICKAXE = ITEMS.registerItem(
         "crowbar_pickaxe",
@@ -272,6 +297,7 @@ public class ModItems {
                     output.accept(SMELTER_PICKAXE.get());
                     output.accept(ENCUMBERING_PICKAXE.get());
                     output.accept(CRAB_CLAW_PICKAXE.get());
+                    output.accept(ROCKY_CANDY.get());
                     output.accept(CROWBAR_PICKAXE.get());
                     output.accept(MAGNET_PICKAXE.get());
                     output.accept(NEGATIVE_MINING_PICKAXE.get());

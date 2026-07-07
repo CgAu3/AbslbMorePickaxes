@@ -1,4 +1,4 @@
-// 26.1.2	2026-07-07T00:19:35.764551	Model Definitions - abslb_more_pickaxes
+// 26.1.2	2026-07-07T17:09:53.2218371	Model Definitions - abslb_more_pickaxes
 2d5a1bfcb886188e5c17cf3033b16ed4571faadc assets/abslb_more_pickaxes/blockstates/negative_existence_block.json
 0fbb09ee7429b79002b503791003c0509923b0da assets/abslb_more_pickaxes/items/anglerfish_pickaxe.json
 1463595b9c9e67116bb513e19268bc1c80ba2821 assets/abslb_more_pickaxes/items/bedrock_pickaxe.json
@@ -10,6 +10,7 @@ d897d13e6d099e93848d7c951e03b4a7811e3a6a assets/abslb_more_pickaxes/items/magnet
 9e3d6a5904c7f7b39e7103387678c52c628cb3be assets/abslb_more_pickaxes/items/moss_pickaxe.json
 f40102b2fa605b673f150a224b4209f8e1040a1d assets/abslb_more_pickaxes/items/negative_existence_block.json
 a18d57da7538e27c4304170f2407f40b647d4ac3 assets/abslb_more_pickaxes/items/negative_mining_pickaxe.json
+1164d8382e9efc5c758c932e7c8ea7da24f8985a assets/abslb_more_pickaxes/items/rocky_candy.json
 c054baffbc8f45685317727bed0022682c303a51 assets/abslb_more_pickaxes/items/smelter_pickaxe.json
 60c260cf84b034dc9ba31cb338c12d65922ce4e8 assets/abslb_more_pickaxes/models/item/anglerfish_pickaxe.json
 91d1e4d1051dbe66de5f49f17778f91ef4f20bde assets/abslb_more_pickaxes/models/item/bedrock_pickaxe.json
@@ -21,4 +22,5 @@ a2d040064dfe73e0856f11a5541b3e101dc2a51b assets/abslb_more_pickaxes/models/item/
 74bc10593eceee4174aa82774b04568836cca403 assets/abslb_more_pickaxes/models/item/moss_pickaxe.json
 b641371126b3c0cc24d50f873736b580b7159b4f assets/abslb_more_pickaxes/models/item/negative_existence_block.json
 93416b0c82b5f1136e76e0c29efd7d56af0d2639 assets/abslb_more_pickaxes/models/item/negative_mining_pickaxe.json
+8e23884f92b13f7ee9e07cb88373e547c73463ee assets/abslb_more_pickaxes/models/item/rocky_candy.json
 5a63c7c9703114a45533d32fe90a340ea78efccd assets/abslb_more_pickaxes/models/item/smelter_pickaxe.json

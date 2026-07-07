@@ -1,4 +1,5 @@
-// 26.1.2	2026-07-07T03:09:29.2806416	abslb_more_pickaxes_recipes_runner
+// 26.1.2	2026-07-07T17:20:49.9794659	abslb_more_pickaxes_recipes_runner
+cee148ed521a4a2521ab7df6ddb1b82a0432dfde data/abslb_more_pickaxes/advancement/recipes/food/rocky_candy.json
 f37242e763887ab5d39627d31e874c47b5016e7b data/abslb_more_pickaxes/advancement/recipes/tools/bedrock_pickaxe.json
 0f7cca7a3b81e8ba4a042452f1ff972c8a5acbab data/abslb_more_pickaxes/advancement/recipes/tools/crab_claw_pickaxe.json
 d8a1244921050942cf74ac436d41e9ede11c74cc data/abslb_more_pickaxes/advancement/recipes/tools/crowbar_pickaxe.json
@@ -16,4 +17,5 @@ c5dbf9db778914b27a0689334c3c1b3eeff65ce2 data/abslb_more_pickaxes/recipe/encumbe
 365837f7da16f502014e4abd503a95ba8e7c896c data/abslb_more_pickaxes/recipe/magnet_pickaxe.json
 e3f89356f5459305b688901bb6ff55849dc9f391 data/abslb_more_pickaxes/recipe/moss_pickaxe.json
 f1fa279aa3b91521e4a15dbffbb0cb73cc20fc71 data/abslb_more_pickaxes/recipe/negative_mining_pickaxe.json
+8194af3dcdb23a5c35787af143e16a6fca0533f6 data/abslb_more_pickaxes/recipe/rocky_candy.json
 db1c95fb66955fc247e10398bcb00b8963729146 data/abslb_more_pickaxes/recipe/smelter_pickaxe.json
