@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_item": {
+    "has_end_stone": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:end_crystal"
+            "items": "minecraft:end_stone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "abslb_more_pickaxes:negative_mining_pickaxe"
+        "recipe": "minecraft:negative_mining_pickaxe_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_item"
+      "has_end_stone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "abslb_more_pickaxes:negative_mining_pickaxe"
+      "minecraft:negative_mining_pickaxe_smithing"
     ]
   }
 }

@@ -26,5 +26,10 @@
   "item.abslb_more_pickaxes.crab_claw_pickaxe": "Crab Claw Pickaxe",
   "item.abslb_more_pickaxes.smelter_pickaxe": "Smelter Pickaxe",
   "tooltip.abslb_more_pickaxes.smelter_pickaxe": "Smelts drops. If the block is stone or cobblestone, does not use durability and smelts into smooth stone",
-  "item.abslb_more_pickaxes.rocky_candy": "Rocky Candy"
+  "item.abslb_more_pickaxes.rocky_candy": "Rocky Candy",
+  "item.abslb_more_pickaxes.hollow_template": "Hollow Template",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.additions_slot_description": "Add End Stone for pickaxe or Netherite Ingot for template",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.applies_to": "Diamond Pickaxe or Hollow Template",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.base_slot_description": "Add Diamond Pickaxe or another Hollow Template",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients": "End Stone or Netherite Ingot"
 }

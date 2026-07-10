@@ -26,12 +26,15 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.SmithingTemplateItem;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.List;
 
 import static io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes.MOD_ID;
 
@@ -196,6 +199,22 @@ public class ModItems {
         () -> new Item.Properties()
             .stacksTo(1)
     );
+    private static final Identifier EMPTY_SLOT_PICKAXE = Identifier.withDefaultNamespace("container/slot/pickaxe");
+    private static final Identifier EMPTY_SLOT_INGOT = Identifier.withDefaultNamespace("container/slot/ingot");
+    private static final int BLUE = 5592575;
+    public static final DeferredItem<SmithingTemplateItem> HOLLOW_TEMPLATE = ITEMS.registerItem(
+        "hollow_template",
+        p -> new SmithingTemplateItem(
+            Component.translatable("item.abslb_more_pickaxes.smithing_template.hollow_upgrade.applies_to").withColor(BLUE),
+            Component.translatable("item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients").withColor(BLUE),
+            Component.translatable("item.abslb_more_pickaxes.smithing_template.hollow_upgrade.base_slot_description"),
+            Component.translatable("item.abslb_more_pickaxes.smithing_template.hollow_upgrade.additions_slot_description"),
+            List.of(EMPTY_SLOT_PICKAXE),
+            List.of(EMPTY_SLOT_INGOT),
+            p
+        ),
+        Item.Properties::new
+    );
     public static final DeferredItem<NegativeMiningPickaxeItem> NEGATIVE_MINING_PICKAXE = ITEMS.registerItem(
         "negative_mining_pickaxe",
         p -> new NegativeMiningPickaxeItem(
@@ -300,6 +319,7 @@ public class ModItems {
                     output.accept(ROCKY_CANDY.get());
                     output.accept(CROWBAR_PICKAXE.get());
                     output.accept(MAGNET_PICKAXE.get());
+                    output.accept(HOLLOW_TEMPLATE.get());
                     output.accept(NEGATIVE_MINING_PICKAXE.get());
                     output.accept(NEGATIVE_EXISTENCE_BLOCK_ITEM.get());
                     output.accept(ANGLERFISH_PICKAXE.get());

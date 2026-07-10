@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:end_crystal",
+    "B": "minecraft:grass_block"
+  },
+  "pattern": [
+    " B ",
+    "BAB",
+    " B "
+  ],
+  "result": {
+    "id": "abslb_more_pickaxes:hollow_template"
+  }
+}

@@ -26,5 +26,10 @@
   "item.abslb_more_pickaxes.crab_claw_pickaxe": "蟹钳镐",
   "item.abslb_more_pickaxes.smelter_pickaxe": "熔炼镐",
   "tooltip.abslb_more_pickaxes.smelter_pickaxe": "熔炼掉落物。如果方块是圆石或石头，不消耗耐久且熔炼为平滑石",
-  "item.abslb_more_pickaxes.rocky_candy": "石磊糖"
+  "item.abslb_more_pickaxes.rocky_candy": "石磊糖",
+  "item.abslb_more_pickaxes.hollow_template": "空洞模板",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.additions_slot_description": "镐子用末地石，模板用下界合金锭",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.applies_to": "钻石镐或空洞模板",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.base_slot_description": "放入钻石镐或者另一个空洞模板",
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients": "末地石或下界合金锭"
 }

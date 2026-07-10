@@ -13,10 +13,12 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.SmithingTransformRecipeBuilder;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import org.jspecify.annotations.NonNull;
 
@@ -146,18 +148,42 @@ public class ModRecipeProvider extends RecipeProvider {
             .define('C', Items.DIAMOND_PICKAXE)
             .unlockedBy("has_item", has(Items.LODESTONE))
             .save(output);
-        ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.NEGATIVE_MINING_PICKAXE)
-            .pattern("DAD")
-            .pattern("BCB")
-            .pattern("BEB")
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.MISC, ModItems.HOLLOW_TEMPLATE)
+            .pattern(" B ")
+            .pattern("BAB")
+            .pattern(" B ")
             .define('A', Items.END_CRYSTAL)
-            .define('B', Items.ENDER_PEARL)
-            .define('C', Items.DIAMOND_PICKAXE)
-            .define('D', Items.OBSIDIAN)
-            .define('E', Items.END_STONE)
+            .define('B', Items.GRASS_BLOCK)
             .unlockedBy("has_item", has(Items.END_STONE))
-            .unlockedBy("has_item", has(Items.END_CRYSTAL))
+            .unlockedBy("has_item", has(Items.GRASS_BLOCK))
             .save(output);
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.BUILDING_BLOCKS, ModItems.NEGATIVE_EXISTENCE_BLOCK_ITEM, 16)
+            .pattern("CBC")
+            .pattern("BAB")
+            .pattern("CBC")
+            .define('A', ModItems.HOLLOW_TEMPLATE)
+            .define('B', Items.GLASS)
+            .define('C', Items.POPPED_CHORUS_FRUIT)
+            .unlockedBy("has_item", has(ModItems.NEGATIVE_MINING_PICKAXE))
+            .save(output);
+        SmithingTransformRecipeBuilder.smithing(
+                Ingredient.of(ModItems.HOLLOW_TEMPLATE),
+                Ingredient.of(Items.DIAMOND_PICKAXE),
+                Ingredient.of(Items.END_STONE),
+                RecipeCategory.TOOLS,
+                ModItems.NEGATIVE_MINING_PICKAXE.get()
+            )
+            .unlocks("has_end_stone", this.has(Items.END_STONE))
+            .save(this.output,  "negative_mining_pickaxe_smithing");
+        SmithingTransformRecipeBuilder.smithing(
+                Ingredient.of(ModItems.HOLLOW_TEMPLATE),
+                Ingredient.of(ModItems.HOLLOW_TEMPLATE),
+                Ingredient.of(Items.NETHERITE_INGOT),
+                RecipeCategory.MISC,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE
+            )
+            .unlocks("has_netherite_ingot", this.has(Items.NETHERITE_INGOT))
+            .save(this.output,  "netherite_upgrade_smithing_template_from_hollow_template_smithing");
         ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.BEDROCK_PICKAXE)
             .pattern("AAA")
             .pattern(" C ")

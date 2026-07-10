@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:end_stone",
+  "base": "minecraft:diamond_pickaxe",
+  "result": {
+    "id": "abslb_more_pickaxes:negative_mining_pickaxe"
+  },
+  "template": "abslb_more_pickaxes:hollow_template"
+}

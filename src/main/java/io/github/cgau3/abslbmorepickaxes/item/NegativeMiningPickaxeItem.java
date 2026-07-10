@@ -41,24 +41,24 @@ public class NegativeMiningPickaxeItem extends Item implements ITooltipItem{
         float speed =  8f + (float)player.getAttributeValue(Attributes.MINING_EFFICIENCY);
         if (MobEffectUtil.hasDigSpeed(player)) {
             speed *= 1.0F + (float) (MobEffectUtil.getDigSpeedAmplification(player) + 1) * 0.2F;
-            MobEffectInstance fatigue = player.getEffect(MobEffects.MINING_FATIGUE);
-            if (fatigue != null) {
-                float var10000;
-                switch (fatigue.getAmplifier()) {
-                    case 0 -> var10000 = 0.3F;
-                    case 1 -> var10000 = 0.09F;
-                    case 2 -> var10000 = 0.0027F;
-                    default -> var10000 = 8.1E-4F;
-                }
-                speed *= var10000;
+        }
+        MobEffectInstance fatigue = player.getEffect(MobEffects.MINING_FATIGUE);
+        if (fatigue != null) {
+            float var10000;
+            switch (fatigue.getAmplifier()) {
+                case 0 -> var10000 = 0.3F;
+                case 1 -> var10000 = 0.09F;
+                case 2 -> var10000 = 0.0027F;
+                default -> var10000 = 8.1E-4F;
             }
-            speed *= (float) player.getAttributeValue(Attributes.BLOCK_BREAK_SPEED);
-            if (player.isEyeInFluid(FluidTags.WATER)) {
-                speed *= (float) player.getAttributeValue(Attributes.SUBMERGED_MINING_SPEED);
-            }
+            speed *= var10000;
+        }
+        speed *= (float) player.getAttributeValue(Attributes.BLOCK_BREAK_SPEED);
+        if (player.isEyeInFluid(FluidTags.WATER)) {
+            speed *= (float) player.getAttributeValue(Attributes.SUBMERGED_MINING_SPEED);
         }
         float timeTicks = (2.08f * 30) / speed * 2f;
-        return (int) Math.ceil(timeTicks);
+        return Math.min((int) Math.ceil(timeTicks), 2400);
     }
 
     @Override

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:netherite_ingot",
+  "base": "abslb_more_pickaxes:hollow_template",
+  "result": {
+    "id": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "template": "abslb_more_pickaxes:hollow_template"
+}
