@@ -1,6 +1,7 @@
 package io.github.cgau3.abslbmorepickaxes.init;
 
 import io.github.cgau3.abslbmorepickaxes.AbslbMorePickaxes;
+import io.github.cgau3.abslbmorepickaxes.item.AncientBeastPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.AnglerfishPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.BedrockPickaxeItem;
 import io.github.cgau3.abslbmorepickaxes.item.CrowbarPickaxeItem;
@@ -285,6 +286,21 @@ public class ModItems {
             .stacksTo(1)
             .rarity(Rarity.UNCOMMON)
     );
+    public static final DeferredItem<AncientBeastPickaxeItem> ANCIENT_BEAST_PICKAXE = ITEMS.registerItem(
+        "ancient_beast_pickaxe",
+        p -> new AncientBeastPickaxeItem(
+            ModToolMaterials.POWERFUL.applyToolProperties(
+                p,
+                BlockTags.MINEABLE_WITH_PICKAXE,
+                2.5f,
+                -2.8f,
+                0f
+            )
+        ),
+        () -> new Item.Properties()
+            .stacksTo(1)
+            .rarity(Rarity.UNCOMMON)
+    );
     public static final DeferredItem<BedrockPickaxeItem> BEDROCK_PICKAXE = ITEMS.registerItem(
         "bedrock_pickaxe",
         p -> new BedrockPickaxeItem(
@@ -322,6 +338,7 @@ public class ModItems {
                     output.accept(HOLLOW_TEMPLATE.get());
                     output.accept(NEGATIVE_MINING_PICKAXE.get());
                     output.accept(NEGATIVE_EXISTENCE_BLOCK_ITEM.get());
+                    output.accept(ANGLERFISH_PICKAXE.get());
                     output.accept(ANGLERFISH_PICKAXE.get());
                     output.accept(BEDROCK_PICKAXE.get());
                 })

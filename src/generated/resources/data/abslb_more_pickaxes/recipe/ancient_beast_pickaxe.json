@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": "minecraft:bone_block",
+    "B": "minecraft:diamond_pickaxe",
+    "C": "minecraft:torchflower",
+    "E": "minecraft:sniffer_egg",
+    "L": "minecraft:lead"
+  },
+  "pattern": [
+    "AAA",
+    "CBL",
+    " E "
+  ],
+  "result": {
+    "id": "abslb_more_pickaxes:ancient_beast_pickaxe"
+  }
+}

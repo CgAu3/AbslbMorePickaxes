@@ -108,5 +108,9 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
             .addTag(BlockTags.DOORS)
             .addTags(BlockTags.BEDS)
             .add(Blocks.POWDER_SNOW);
+        tag(ModBlockTags.WORLD_BASE_STONE_BLOCKS)
+            .addTags(BlockTags.BASE_STONE_OVERWORLD)
+            .addTags(BlockTags.BASE_STONE_NETHER)
+            .add(Blocks.END_STONE);
     }
 }

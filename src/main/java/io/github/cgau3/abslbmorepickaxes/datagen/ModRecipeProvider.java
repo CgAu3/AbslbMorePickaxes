@@ -184,6 +184,17 @@ public class ModRecipeProvider extends RecipeProvider {
             )
             .unlocks("has_netherite_ingot", this.has(Items.NETHERITE_INGOT))
             .save(this.output,  "netherite_upgrade_smithing_template_from_hollow_template_smithing");
+        ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.ANCIENT_BEAST_PICKAXE)
+            .pattern("AAA")
+            .pattern("CBL")
+            .pattern(" E ")
+            .define('A', Items.BONE_BLOCK)
+            .define('B', Items.DIAMOND_PICKAXE)
+            .define('C', Items.TORCHFLOWER)
+            .define('L', Items.LEAD)
+            .define('E', Items.SNIFFER_EGG)
+            .unlockedBy("has_item", has(Items.SNIFFER_EGG))
+            .save(output);
         ShapedRecipeBuilder.shaped(items, RecipeCategory.TOOLS, ModItems.BEDROCK_PICKAXE)
             .pattern("AAA")
             .pattern(" C ")

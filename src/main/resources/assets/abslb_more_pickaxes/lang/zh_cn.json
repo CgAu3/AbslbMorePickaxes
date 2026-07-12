@@ -31,5 +31,7 @@
   "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.additions_slot_description": "镐子用末地石，模板用下界合金锭",
   "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.applies_to": "钻石镐或空洞模板",
   "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.base_slot_description": "放入钻石镐或者另一个空洞模板",
-  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients": "末地石或下界合金锭"
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients": "末地石或下界合金锭",
+  "item.abslb_more_pickaxes.ancient_beast_pickaxe": "古兽镐",
+  "tooltip.abslb_more_pickaxes.ancient_beast_pickaxe": "挖掘世界基底类方块时，会自动根据持有者的位置和方向进行一定长度的鱼骨形连锁"
 }

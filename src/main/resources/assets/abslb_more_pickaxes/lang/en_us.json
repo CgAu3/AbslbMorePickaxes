@@ -11,7 +11,7 @@
   "item.abslb_more_pickaxes.magnet_pickaxe": "Magnet Pickaxe",
   "tooltip.abslb_more_pickaxes.magnet_pickaxe": "Drags the block drops to the breaker who holds it",
   "item.abslb_more_pickaxes.encumbering_pickaxe": "Encumbering Pickaxe",
-  "tooltip.abslb_more_pickaxes.encumbering_pickaxe": "Mines basic stones quicker; the player holding it Cannot pick up items",
+  "tooltip.abslb_more_pickaxes.encumbering_pickaxe": "Mines normal stones quicker; the player holding it Cannot pick up items",
   "item.abslb_more_pickaxes.anglerfish_pickaxe": "Anglerfish Pickaxe",
   "tooltip.abslb_more_pickaxes.anglerfish_pickaxe": "Mines fast in water; Occasionally catches a fish when mining underwater",
   "tooltip.abslb_more_pickaxes.anglerfish_pickaxe_transmutation": "Obtained by throwing a Diamond Pickaxe to a Glow Squid",
@@ -31,5 +31,7 @@
   "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.additions_slot_description": "Add End Stone for pickaxe or Netherite Ingot for template",
   "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.applies_to": "Diamond Pickaxe or Hollow Template",
   "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.base_slot_description": "Add Diamond Pickaxe or another Hollow Template",
-  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients": "End Stone or Netherite Ingot"
+  "item.abslb_more_pickaxes.smithing_template.hollow_upgrade.ingredients": "End Stone or Netherite Ingot",
+  "item.abslb_more_pickaxes.ancient_beast_pickaxe": "Ancient Beast Pickaxe",
+  "tooltip.abslb_more_pickaxes.ancient_beast_pickaxe": "When mining world-base stone blocks, automatically chains in a fish-bone shape"
 }

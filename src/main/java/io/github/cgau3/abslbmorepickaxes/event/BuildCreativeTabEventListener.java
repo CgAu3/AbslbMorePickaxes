@@ -29,6 +29,7 @@ public class BuildCreativeTabEventListener {
             event.accept(ModItems.MAGNET_PICKAXE.get());
             event.accept(ModItems.NEGATIVE_MINING_PICKAXE.get());
             event.accept(ModItems.ANGLERFISH_PICKAXE.get());
+            event.accept(ModItems.ANCIENT_BEAST_PICKAXE.get());
             event.accept(ModItems.BEDROCK_PICKAXE.get());
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
