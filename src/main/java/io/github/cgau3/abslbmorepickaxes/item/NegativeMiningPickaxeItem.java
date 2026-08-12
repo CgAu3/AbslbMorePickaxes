@@ -48,8 +48,8 @@ public class NegativeMiningPickaxeItem extends Item implements ITooltipItem{
             switch (fatigue.getAmplifier()) {
                 case 0 -> var10000 = 0.3F;
                 case 1 -> var10000 = 0.09F;
-                case 2 -> var10000 = 0.0027F;
-                default -> var10000 = 8.1E-4F;
+                case 2 -> var10000 = 0.027F;
+                default -> var10000 = 0.0081F;
             }
             speed *= var10000;
         }
